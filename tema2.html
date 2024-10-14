@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000;
+            position: relative;
+        }
+
+        /* Section 1 (Top Section) */
+        .section1 {
+            background: url('1.png') no-repeat center center/cover;
+            color: #000;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            font-family: "Judson", serif;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .section h1 {
+            font-size: 70px;
+            font-family: "Julius Sans One", sans-serif;
+            font-weight: 400;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .section .names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 40px;
+        }
+
+        .section .date {
+            font-size: 25px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .section .button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 18px;
+            display: inline-flex;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .section .button i {
+            margin-left: 8px;
+        }
+
+        /* Section 2 (Bottom Section) */
+        .section2 {
+            background: url('3.png') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .section2 h2 {
+            margin-top: 100px;
+            font-size: 35px;
+            font-family: "Judson", serif;
+            font-weight: 400;
+        }
+
+        .section2 h1 {
+            font-size: 70px;
+            font-family: 'Julius Sans One', sans-serif;
+            margin-top: 20px;
+        }
+
+        .section2 .names {
+            font-size: 50px;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* Bride & Groom Profiles */
+        .container {
+            text-align: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .title {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            margin-bottom: 60px;
+        }
+
+        .profiles {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+
+        }
+
+
+
+        .profile-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-family: 'Great Vibes', cursive;
+            font-size: 28px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .profile h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .profile p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        .container1 {
+            text-align: center;
+            padding: 50px;
+            background-color: #1c1c1c;
+        }
+
+        .event-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .event-card {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+        }
+
+        .event-card h2 {
+            font-size: 36px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 10px;
+        }
+
+        .event-card p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .event-card strong {
+            font-size: 24px;
+        }
+
+        .event-card .button {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .event-card .button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .event-card .icon {
+            width: 90px;
+            margin-bottom: 20px;
+        }
+
+        .event-card .icons {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        /* Akad Nikah Section */
+        .akad-nikah .icon {
+            width: 90px;
+            margin-bottom: -20px;
+            /* Reduce the space between the icon and text */
+        }
+
+        .akad-nikah h2 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .akad-nikah .akad-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 30px;
+            display: block;
+            margin-left: 70px;
+        }
+
+        .akad-nikah p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Add some margin to the date and time */
+        .akad-nikah p:nth-of-type(1) {
+            margin-top: 40px;
+        }
+
+        /* Increase the gap between the venue name and address */
+        .akad-nikah p:nth-of-type(3) {
+            margin-top: 45px;
+        }
+
+        .akad-nikah p:nth-of-type(4) {
+            margin-top: 10px;
+            /* Space above the address */
+        }
+
+        .resepsi .icon {
+            width: 170px;
+            margin-bottom: -20px;
+            /* Sesuaikan icon dan teks */
+        }
+
+        .resepsi h2 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .resepsi .akad-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 30px;
+            display: block;
+            margin-left: 70px;
+        }
+
+        .resepsi p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .resepsi p:nth-of-type(1) {
+            margin-top: 40px;
+        }
+
+        .resepsi p:nth-of-type(3) {
+            margin-top: 45px;
+        }
+
+        .resepsi p:nth-of-type(4) {
+            margin-top: 10px;
+            /* Space above the address */
+        }
+
+        /* Countdown Timer Section */
+        .container2 {
+            background-color: #1c1c1c;
+            color: #fff;
+            padding: 20px 0;
+            padding: 50px;
+        }
+
+        .countdown-content {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .countdown-content h2 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .countdown-box {
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        .countdown-box span {
+            display: block;
+        }
+
+        .countdown-box .label {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .reminder-button {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 40px;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .reminder-button i {
+            margin-right: 10px;
+        }
+
+        .divider {
+            width: 25%;
+            /* Adjust the width as needed */
+            margin: 10px auto;
+            /* Centers the line and adds vertical spacing */
+            border: 1px solid #fff;
+            /* Change the color to match your design */
+            opacity: 0.5;
+            /* Adjusts the thickness appearance */
+        }
+
+        .screen-prewed {
+
+            top: 0;
+            /* Aligns to the top of the viewport */
+            left: 0;
+            /* Aligns to the left of the viewport */
+            width: 100vw;
+            /* Sets the width to 100% of the viewport width */
+            height: 100vh;
+            /* Sets the height to 100% of the viewport height */
+            object-fit: cover;
+            /* Ensures the image covers the area without distorting */
+            z-index: -1;
+            /* Places the image behind other content */
+        }
+
+        /* RSVP Section */
+        .rsvp-section {
+            background-color: #f9f9f9;
+            padding: 40px 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .rsvp-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-top: 65px;
+            padding: 0px 20px;
+        }
+
+        .rsvp-section h2 {
+            font-family: 'YourFont', serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .rsvp-container p {
+            font-family: 'YourFont', serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .rsvp-container input,
+        .rsvp-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .attendance-options label {
+            font-size: 16px;
+        }
+
+        .rsvp-submit {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .rsvp-submit:hover {
+            background-color: #555;
+        }
+
+        /* Gift Section */
+        .gift-section {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .gift-container h2 {
+            font-family: 'YourFont', serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .gift-container p {
+            font-family: 'YourFont', serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .gift-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gift-button {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .gift-button:hover {
+            background-color: #ddd;
+        }
+
+        /* Message Section */
+        .message-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .message-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .message-container h2 {
+            font-family: 'YourFont', serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .message-container textarea,
+        .message-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .message-submit {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .message-submit:hover {
+            background-color: #555;
+        }
+
+        .rsvp-container-rsvp h2 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .rsvp-title {
+            font-size: 1px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        /* Akad Nikah Section */
+        .rsvp .icon {
+            width: 250px;
+            margin-bottom: -20px;
+            margin-top: -70px;
+        }
+
+        .rsvp h2 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .rsvp .rsvp-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 30px;
+            display: block;
+            margin-left: 70px;
+        }
+
+        .rsvp p {
+            font-size: 20px;
+            margin: 1px 0;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        .rsvp-container form label1 {
+            display: block;
+            /* Ensures the label occupies the full width */
+            text-align: left;
+            /* Aligns the text to the left */
+            margin-bottom: 10px;
+            /* Adds space below the label */
+            font-size: 18px;
+            /* Adjusts the font size for better readability */
+            font-weight: bold;
+            margin-top: 40px;
+            /* Makes the text bold */
+        }
+
+        .rsvp-container p {
+            text-align: left;
+            /* Aligns the text to the left */
+            font-size: 18px;
+            /* Adjusts the font size for better readability */
+            margin-top: 15px;
+        }
+
+        .rsvp-container form label {
+            display: block;
+            /* Ensures the label occupies the full width */
+            text-align: left;
+            /* Aligns the text to the left */
+            margin-bottom: 10px;
+            /* Adds space below the label */
+            font-size: 18px;
+            /* Adjusts the font size for better readability */
+
+        }
+
+        .divider1 {
+            width: 100%;
+            border: 1px solid #1c1c1c;
+            /* Keeps the line color */
+            opacity: 0.5;
+            /* Adjusts the thickness appearance */
+            margin-left: 2px;
+            margin-top: -40px;
+            /* Moves the divider up by 20px (adjust this value as needed) */
+        }
+
+        .rsvp-section .p {
+            font-size: 20px;
+        }
+
+        .attendance-options {
+            text-align: left;
+            /* Aligns the text to the left */
+        }
+
+        .attendance-items {
+            display: flex;
+            /* Use Flexbox to align items */
+            justify-content: flex-start;
+            /* Align items to the left */
+            align-items: center;
+            /* Vertically center items */
+            margin-left: -40px;
+        }
+
+        .attendance-item {
+            display: flex;
+            /* Ensure each item is a flex container */
+            align-items: center;
+            /* Vertically align the radio button and label */
+            margin-right: px;
+            /* Space between the items */
+        }
+
+        .no-bold {
+            font-weight: normal;
+            /* Ensure the label text is not bold */
+            margin-left: 8px;
+            /* Adds space between the radio button and label */
+        }
+
+        .photo-gallery {
+            display: flex;
+            /* Use Flexbox to align items in a row */
+            justify-content: space-between;
+            /* Distribute space evenly between items */
+            margin: 0;
+            /* Remove any margin around the gallery */
+            padding: 0;
+            /* Remove padding around the gallery */
+        }
+
+        .photo-item {
+
+            margin: 12px;
+            /* Remove margin between items */
+        }
+
+        .photo-item img {
+            width: 100%;
+            /* Make images responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+
+        }
+
+        .gift h2 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .gift .gift-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 30px;
+            display: block;
+            margin-left: 120px;
+        }
+
+        .gift .icon {
+            width: 80px;
+            margin-bottom: -20px;
+            
+        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rsvp-section1 {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', serif; 
+}
+
+.quote {
+    margin-bottom: 30px;
+    color: #cfcfcf;
+    font-size: 18px;
+
+            padding: 10px 10px;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    padding-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-template-rows: auto auto; /* Automatically adjust row heights */
+    grid-gap: 10px; /* Space between images */
+    max-width: 900px;
+    margin: 0 auto; /* Center the grid on the page */
+}
+
+/* Size for each photo based on the uploaded image design */
+
+/* First photo: Tall (portrait style) */
+.photo1 img {
+    width: 100%;
+    height: 450px; /* Taller than wide */
+    object-fit: cover; /* Ensures image is properly contained */
+}
+
+/* Second photo: Square */
+.photo2 img {
+    width: 100%;
+    height: 450px; /* Same height as photo1 but squared */
+    object-fit: cover;
+}
+
+/* Third photo: Tall (portrait style) */
+.photo3 img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Fourth photo: Square */
+.photo4 img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Optional rounded corners for uniform look */
+.photo1 img, 
+.photo2 img, 
+.photo3 img, 
+.photo4 img {
+    border-radius: 8px;
+    filter: grayscale(100%); /* Matching grayscale effect */
+}
+
+
+
+.thank {
+    margin-top: 20px;
+}
+
+.thanks {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <div class="section section1">
+        <div>
+            <h2>We invite you to the wedding of</h2>
+            <h1>PUTRA <span class="names">And</span> PUTRI</h1>
+            <p class="date"><i>07. 08. 2024</i></p>
+            <button class="button">Open the Invitation <i class="fas fa-envelope"></i></button>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section section2">
+        <div>
+            <h2>The Wedding of</h2>
+            <h1>PUTRA <span class="names">And</span> PUTRI</h1>
+        </div>
+    </div>
+
+    <!-- Bride & Groom Profiles -->
+    <div class="container">
+        <h1 class="title">BRIDE & GROOM</h1>
+        <div class="profiles">
+            <div class="profile">
+                <img src="wanita.png" alt="Bride" class="profile-img">
+                <p class="name">Riska</p>
+                <h2>Angelina Mariska, S.Kom</h2>
+                <p>Putri Kedua dari<br>Bapak Ahmad Syahputra<br>& Ibu Riyatna Kusumaningrum</p>
+                <div class="social-icons">
+                    <a href="#"><img src="ig.png" alt="Instagram"></a>
+                    <a href="#"><img src="fb.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="laki-laki.png" alt="Groom" class="profile-img">
+                <p class="name">Fakih</p>
+                <h2>Fakih Prasetya Nugraha, S.T</h2>
+                <p>Putra Kedua dari<br>Bapak Ahmad Syahputra<br>& Ibu Riyatna Kusumaningrum</p>
+                <div class="social-icons">
+                    <a href="#"><img src="ig.png" alt="Instagram"></a>
+                    <a href="#"><img src="fb.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="event-section">
+            <!-- Akad Event Card -->
+            <div class="event-card akad-nikah">
+                <img src="ring.png" alt="Wedding Rings" class="icon">
+                <h2>AKAD <span class="akad-text">Nikah</span></h2>
+                <p>Minggu, 17 Oktober 2024</p>
+                <p><strong>07.00 - 08.00</strong></p>
+                <p>Puri Ardhya Garini, Halim Perdana Kusuma</p>
+                <p>Jl. Halim Perdana Kusuma, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, DKI Jakarta</p>
+                <div style="text-align: center;"> <!-- Membungkus tombol untuk memastikan tengah secara horizontal -->
+                    <button class="button"
+                        style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border: none; cursor: pointer;">
+                        <img src="location.png" alt="Location Icon"
+                            style="width: 16px; height: 16px; margin-right: 8px;">
+                        Lihat Lokasi
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="event-section">
+            <!-- Resepsi Event Card -->
+            <div class="event-card resepsi">
+                <img src="birds.png" alt="Bird Symbol" class="icon">
+                <h2>RESEPSI <span class="akad-text">Pernikahan</span></h2>
+                <p>Minggu, 17 Oktober 2024</p>
+                <p><strong>08.00 - 11.00</strong></p> <!-- Ubah waktu acara -->
+                <p>Puri Ardhya Garini, Halim Perdana Kusuma</p>
+                <p>Jl. Halim Perdana Kusuma, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, DKI Jakarta</p>
+                <div style="text-align: center;"> <!-- Membungkus tombol untuk memastikan tengah secara horizontal -->
+                    <button class="button"
+                        style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border: none; cursor: pointer;">
+                        <img src="location.png" alt="Location Icon"
+                            style="width: 16px; height: 16px; margin-right: 8px;">
+                        Lihat Lokasi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="prewed.png" class="screen-prewed">
+    <div class="container2">
+        <div class="countdown-content">
+            <h2>Hari yang ditunggu</h2>
+            <hr class="divider">
+            <div id="countdown">
+                <div class="countdown-box">
+                    <span id="days">2</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="hours">06</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="minutes">30</span>
+                    <span class="label">Mins</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds">10</span>
+                    <span class="label">Secs</span>
+                </div>
+            </div>
+            <button class="reminder-button">
+                <i class="fas fa-bell"></i> Buat Pengingat
+            </button>
+        </div>
+    </div>
+    <!-- RSVP Section -->
+    <section id="rsvp" class="rsvp-section">
+        <p> "Dalam setiap hembusan angin dan riuh gemuruh ombak, aku selalu percaya bahwa semesta telah menuliskan
+            takdir kita bersama,
+        <p>erjalan beriringan menuju keabadian cinta yang tak pernah pudar."</p>
+        <div class="rsvp-container">
+
+            <!-- Akad Event Card -->
+            <div class="rsvp-container rsvp">
+                <img src="rsvp.png" alt="Wedding Rings" class="icon">
+                <h2 class="rsvp-title">RSVP <span class="rsvp-text">Kehadiran</span></h2>
+
+                <p>
+                    Kami tidak sabar menunggu hari pernikahan kami bersama Bapak/Ibu/Saudara/i. Mohon konfirmasi
+                    kehadiran. Terima kasih.
+                </p>
+                <form action="#" method="post">
+                    <label1 for="name">Nama Lengkap</label1>
+                    <p>Galang Freya</p>
+                    <hr class="divider1">
+                    <div class="attendance-options">
+                        <label>Kehadiran?</label><br>
+                        <div class="attendance-items">
+                            <div class="attendance-item">
+                                <input type="radio" id="yes" name="attendance" value="yes" required>
+                                <label for="yes" class="no-bold">Ya, saya akan hadir</label>
+                            </div>
+                            <div class="attendance-item">
+                                <input type="radio" id="no" name="attendance" value="no">
+                                <label for="no" class="no-bold">Maaf, tidak bisa</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <button type="submit" class="rsvp-submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+    <section class="photo-gallery">
+        <div class="photo-item">
+            <img src="prewed1.png" alt="Description of image 1">
+        </div>
+        <div class="photo-item">
+            <img src="prewed2.png" alt="Description of image 2">
+        </div>
+        <div class="photo-item">
+            <img src="prewed3.png" alt="Description of image 3">
+        </div>
+    </section>
+    <section id="gift" class="gift-section">
+        <div class="gift-container gift">
+            <img src="gift.png" alt="gift" class="icon">
+            <h2>GIFT <span class="gift-text"> Amplop Digital</span></h2>
+            <p>
+                Bagi keluarga dan sahabat yang ingin mengirimkan hadiah, silakan mengirimkannya melalui tautan berikut.
+            </p>
+            <div class="gift-buttons">
+                <button class="button"
+                    style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border: none; cursor: pointer;">
+                    <img src="kado.png" alt="Location Icon" style="width: 16px; height: 16px; margin-right: 8px;">
+                    Kirim Hadiah
+                </button>
+                <button class="button"
+                    style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border: none; cursor: pointer;">
+                    <img src="bank.png" alt="Location Icon" style="width: 25px; height: 25px; margin-right: 8px;">
+                    Transfer Bank
+                </button>
+            </div>
+        </div>
+    </section>
+    <img src="prewed4.png" class="screen-prewed">
+                <section id="rsvp" class="rsvp-section1">
+                    <p class="quote">"Seperti daun yang jatuh di musim gugur, setiap momen bersamamu adalah bagian dari keindahan hidup yang tak akan pernah kulupakan"</p>
+                    
+                    <div class="container5">
+                        <div class="grid">
+                            <div class="photo1">
+                                <img src="prewed5.png" alt="Couple Photo 1">
+                            </div>
+                            <div class="photo2">
+                                <img src="prewed6.png" alt="Couple Photo 2">
+                            </div>
+                            <div class="photo3">
+                                <img src="prewed7.png" alt="Couple Photo 3">
+                            </div>
+                            <div class="photo4">
+                                <img src="prewed8.png" alt="Couple Photo 4">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="thank">
+                        <p class="thanks">Terima Kasih</p>
+                        <h2>PUTRA & PUTRI</h2>
+                    </div>
+                </section>
+                
+
+                
+    <!-- Message/Doa Section -->
+    <section id="message" class="message-section">
+        <div class="message-container">
+            <h2>Tinggalkan Pesan/Doa untuk Kami</h2>
+            <form action="#" method="post">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" placeholder="Tulis pesan/doa..." required></textarea>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Nama" required />
+
+                <button type="submit" class="message-submit">Kirim</button>
+            </form>
+        </div>
+    </section> 
+</body>
+</html>
