@@ -44,8 +44,19 @@
             border: none;
             cursor: pointer;
             margin-top: -5px;
+            animation: pulse 4s infinite;
         }
-
+        @keyframes pulse {
+    0% {
+        transform: scale(1); /* Ukuran normal */
+    }
+    50% {
+        transform: scale(1.1); /* Membesar di tengah animasi */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran normal */
+    }
+}
         .section .button i {
             margin-left: 8px;
         }
@@ -122,7 +133,19 @@
             border: none;
             cursor: pointer;
             margin-top: -5px;
+            animation: pulse 4s infinite;
         }
+        @keyframes pulse {
+    0% {
+        transform: scale(1); /* Ukuran normal */
+    }
+    50% {
+        transform: scale(1.1); /* Membesar di tengah animasi */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran normal */
+    }
+}
 
         .section .button i {
             margin-left: 8px;
@@ -187,7 +210,7 @@
         }
 
         .section1 {
-        background-size: 290%; /* Pada layar yang sangat kecil, gambar disesuaikan dengan lebar elemen */
+        background-size: 305%; /* Pada layar yang sangat kecil, gambar disesuaikan dengan lebar elemen */
         background-position: top center;
     }
 
@@ -200,15 +223,26 @@
             display: inline-flex;
             align-items: center;
             border: none;
-            cursor: pointer;
-            margin-top: -5px;
-            margin-bottom: 20px;
+            cursor: pointer; 
+            animation: pulse 4s infinite;
         }
 
+        @keyframes pulse {
+    0% {
+        transform: scale(1); /* Ukuran normal */
+    }
+    50% {
+        transform: scale(1.1); /* Membesar di tengah animasi */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran normal */
+    }
+}
         .section .button i {
             margin-left: 5px;
         }
 
+      
         .wedding-from {
                 font-size: 1.4em;
             }
@@ -216,8 +250,9 @@
             .wedding-from {
             font-size: 1em;
             color: black;
-            margin-top: -15px;
-            font-weight: 700; 
+            margin-top: -10px;
+            font-weight: 550; 
+            margin-bottom: 5px;
         }
         .wedding-ket {
             color: black;
