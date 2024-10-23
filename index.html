@@ -856,6 +856,102 @@
                 background-position: 100% 100%;
             }
         }
+        .timeline{
+            list-style: none;
+            padding: 1.4rem 0;
+            margin-top: 1rem;
+            position: relative;
+        }
+
+        .timeline::before{
+            content: '';
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            width: 1px;
+            background-color: #ffffff;
+            left: 50%;
+        }
+
+        .timeline li{
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline li::before,
+        .timeline li::after{
+            content: '';
+            display: table;
+        }
+
+        .timeline li::after{
+            clear: both;
+        }
+
+        .timeline li .timeline-image{
+            width: 160px;
+            height: 160px;
+            background-color: #000000;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .timeline li .timeline-panel{
+            width: 40%;
+            float: left;
+            border: 1px solid #000000;
+            padding: 2rem;
+            position: relative;
+            border-radius: 8px;
+            background-color: #000000;
+        }
+
+        .timeline li .timeline-panel::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            border-top: 15px solid  transparent;
+            border-left: 15px solid #000000;
+            border-right: 0 solid #000000;
+            border-bottom: 15px solid transparent;
+            top: 80px;
+            right: -15px;
+        }
+
+        .timeline li .timeline-panel::after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            border-top: 14px solid transparent;
+            border-left: 14px solid #000000;
+            border-right: 0 solid #000000;
+            border-bottom: 14px solid transparent;
+            top: 81px;
+            right: -13px;
+        }
+
+        .timeline li.timeline-inverted .timeline-panel{
+            float: right;
+        }
+
+        .timeline li.timeline-inverted .timeline-panel::before{
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        .timeline li.timeline-inverted .timeline-panel::after{
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -13px;
+            right: auto;
+        }
     </style>
 </head>
 <body>
@@ -1043,6 +1139,78 @@
             </div>
         </div>
     </section>
+    <section id="story" class="story">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Bagaimana Cinta Kami Bersemi</span>
+                    <h2>Cerita Kami</h2>
+                    <p>Kami memulai kisah ini dari pertemuan pertama hingga kemudian berpacaran dan akhirnya memutuskan untuk menikah</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image " style="background-image: url(sekolah.jpg);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Pertama Bertemu</h3>
+                                    <span>31 Juni 2016</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Kami bertemu pertama kali di masa SMP yang saat itu kami berada di satu sekolah yang sama. Kemudian kami saling berkenalan dan mulai berkomunikasi secara intens</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image " style="background-image: url(senja.jpg);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Berpacaran</h3>
+                                    <span>12 Agustus 2016</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Setelah merasa sudah dekat akhirnya kami memulai komitmen untuk berpacaran. Momen itu terjadi ketika kami memutuskan untuk pergi ke sebuah pantai di waktu senja</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline">
+                            <div class="timeline-image " style="background-image: url(lamaran.jpg);"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Bertunangan</h3>
+                                    <span>12 Agustus 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Tepat 7 tahun kami berpacaran, Kami memutuskan untuk bertunangan dan memilih tanggal 21 Desember 2023 sebagai tanggal pernikahan Kami</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+<img src="prewed4.png" class="screen-prewed">
+<div class="comment-section">
+    <img src="amplop.png" alt="Envelope Icon" class="icon1">
+    <div class="section-title">Tinggalkan pesan/doa untuk kami</div>
+    <form>
+        <textarea placeholder="Comments"></textarea>
+        <input type="text" placeholder="Name">
+        <button type="submit" class="button1">Kirim</button>
+    </form>
+    <div class="messages">
+        <div class="message">
+            <p><strong>Putra Tahta</strong><br>Semoga menjadi keluarga sakinah mawaddah warohmah, aamiin..</p>
+        </div>
+        <div class="message">
+            <p><strong>Syakira S.Kom</strong><br>Semoga menjadi keluarga sakinah mawaddah warohmah, aamiin..</p>
+        </div>
+    </div>
+</div>
     <img src="prewed4.png" class="screen-prewed">
     <div class="comment-section">
         <img src="amplop.png" alt="Envelope Icon" class="icon1">
