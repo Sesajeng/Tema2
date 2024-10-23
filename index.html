@@ -26,7 +26,6 @@
             position: relative;
         }
 
-        /* Section 1 (Top Section) */
         .section1 {
             background: url('1.png') no-repeat center center/cover;
             color: #000;
@@ -75,23 +74,22 @@
             margin-left: 8px;
         }
 
-        /* Section 2 (Bottom Section) */
         .section2 {
             background: url('3.png') no-repeat center center/cover;
             color: #fff;
         }
 
         .section2 h2 {
-            margin-top: 100px;
+            margin-top: 20px;
             font-size: 35px;
             font-family: "Judson", serif;
-            font-weight: 400;
+
         }
 
         .section2 h1 {
             font-size: 70px;
             font-family: 'Julius Sans One', sans-serif;
-            margin-top: 20px;
+            margin-top: 500px;
         }
 
         .section2 .names {
@@ -99,10 +97,9 @@
             font-family: 'Great Vibes', cursive;
         }
 
-        /* Bride & Groom Profiles */
         .container {
             text-align: center;
-            padding: 50px;
+            padding: 30px;
             background-color: #f9f9f9;
         }
 
@@ -120,8 +117,6 @@
 
         }
 
-
-
         .profile-img {
             width: 100%;
             border-radius: 8px;
@@ -130,9 +125,8 @@
 
         .name {
             font-family: 'Great Vibes', cursive;
-            font-size: 28px;
             margin: 10px 0;
-            color: #333;
+            font-size: 30px !important;
         }
 
         .profile h2 {
@@ -158,7 +152,7 @@
 
         .container1 {
             text-align: center;
-            padding: 50px;
+            padding: 10px;
             background-color: #1c1c1c;
         }
 
@@ -166,7 +160,8 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            margin-top: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .event-card {
@@ -219,11 +214,9 @@
             margin-bottom: 20px;
         }
 
-        /* Akad Nikah Section */
         .akad-nikah .icon {
             width: 90px;
-            margin-bottom: -20px;
-            /* Reduce the space between the icon and text */
+            margin-bottom: 5px;
         }
 
         .akad-nikah h2 {
@@ -245,25 +238,23 @@
             margin: 5px 0;
         }
 
-        /* Add some margin to the date and time */
         .akad-nikah p:nth-of-type(1) {
             margin-top: 40px;
         }
 
-        /* Increase the gap between the venue name and address */
         .akad-nikah p:nth-of-type(3) {
             margin-top: 45px;
         }
 
         .akad-nikah p:nth-of-type(4) {
             margin-top: 10px;
-            /* Space above the address */
+
         }
 
         .resepsi .icon {
             width: 170px;
-            margin-bottom: -20px;
-            /* Sesuaikan icon dan teks */
+            margin-bottom: 5px;
+
         }
 
         .resepsi h2 {
@@ -295,15 +286,13 @@
 
         .resepsi p:nth-of-type(4) {
             margin-top: 10px;
-            /* Space above the address */
         }
 
-        /* Countdown Timer Section */
         .container2 {
             background-color: #1c1c1c;
             color: #fff;
-            padding: 20px 0;
-            padding: 50px;
+            padding: 40px;
+            margin-top: -5px;
         }
 
         .countdown-content {
@@ -320,8 +309,8 @@
         #countdown {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            font-size: 40px;
+            gap: 10px;
+            font-size: 30px;
             font-family: 'Playfair Display', serif;
         }
 
@@ -343,13 +332,18 @@
             background-color: #fff;
             color: #333;
             padding: 10px 20px;
-            border-radius: 10px;
+            border-radius: 5px;
             border: none;
             margin-top: 40px;
             display: inline-flex;
             align-items: center;
             cursor: pointer;
-            font-size: 18px;
+            font-size: 15px;
+        }
+
+        .reminder-button:hover {
+            background-color: #555;
+            color: #fff;
         }
 
         .reminder-button i {
@@ -357,42 +351,33 @@
         }
 
         .divider {
-            width: 25%;
-            /* Adjust the width as needed */
+            width: 23%;
             margin: 10px auto;
-            /* Centers the line and adds vertical spacing */
             border: 1px solid #fff;
-            /* Change the color to match your design */
             opacity: 0.5;
-            /* Adjusts the thickness appearance */
+
+
         }
 
         .screen-prewed {
-
             top: 0;
-            /* Aligns to the top of the viewport */
             left: 0;
-            /* Aligns to the left of the viewport */
             width: 100vw;
-            /* Sets the width to 100% of the viewport width */
             height: 100vh;
-            /* Sets the height to 100% of the viewport height */
             object-fit: cover;
-            /* Ensures the image covers the area without distorting */
             z-index: -1;
-            /* Places the image behind other content */
         }
 
-        /* RSVP Section */
         .rsvp-section {
-            background-color: #f9f9f9;
+            background-color: #f0f0f0;
             padding: 40px 15px;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: -40px;
         }
 
         .rsvp-container {
             max-width: 900px;
+            height: 670px;
             margin: 0 auto;
             background-color: #e0e0e0;
             border-radius: 10px;
@@ -428,17 +413,18 @@
         .rsvp-submit {
             background-color: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-left: 700px;
         }
 
         .rsvp-submit:hover {
             background-color: #555;
         }
 
-        /* Gift Section */
+
         .gift-section {
             background-color: #333;
             color: #fff;
@@ -454,7 +440,7 @@
 
         .gift-container p {
             font-family: 'YourFont', serif;
-            font-size: 18px;
+            font-size: 23px;
             margin-bottom: 20px;
         }
 
@@ -464,12 +450,17 @@
             gap: 20px;
         }
 
+        .gift-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
         .gift-button {
             background-color: #fff;
             color: #333;
             padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: -10px;
             cursor: pointer;
         }
 
@@ -477,7 +468,6 @@
             background-color: #ddd;
         }
 
-        /* Message Section */
         .message-section {
             background-color: #f9f9f9;
             padding: 50px 0;
@@ -534,7 +524,6 @@
             margin-bottom: 10px;
         }
 
-        /* Akad Nikah Section */
         .rsvp .icon {
             width: 250px;
             margin-bottom: -20px;
@@ -559,52 +548,38 @@
             font-size: 20px;
             margin: 1px 0;
             margin-top: 40px;
-            margin-bottom: 50px;
+            margin-bottom: 1px;
         }
 
         .rsvp-container form label1 {
             display: block;
-            /* Ensures the label occupies the full width */
             text-align: left;
-            /* Aligns the text to the left */
             margin-bottom: 10px;
-            /* Adds space below the label */
             font-size: 18px;
-            /* Adjusts the font size for better readability */
             font-weight: bold;
             margin-top: 40px;
-            /* Makes the text bold */
+
         }
 
         .rsvp-container p {
             text-align: left;
-            /* Aligns the text to the left */
             font-size: 18px;
-            /* Adjusts the font size for better readability */
             margin-top: 15px;
         }
 
         .rsvp-container form label {
             display: block;
-            /* Ensures the label occupies the full width */
             text-align: left;
-            /* Aligns the text to the left */
             margin-bottom: 10px;
-            /* Adds space below the label */
             font-size: 18px;
-            /* Adjusts the font size for better readability */
-
         }
 
         .divider1 {
             width: 100%;
             border: 1px solid #1c1c1c;
-            /* Keeps the line color */
             opacity: 0.5;
-            /* Adjusts the thickness appearance */
             margin-left: 2px;
-            margin-top: -40px;
-            /* Moves the divider up by 20px (adjust this value as needed) */
+            margin-top: 1px;
         }
 
         .rsvp-section .p {
@@ -613,58 +588,48 @@
 
         .attendance-options {
             text-align: left;
-            /* Aligns the text to the left */
+            margin-top: -10px;
         }
 
         .attendance-items {
             display: flex;
-            /* Use Flexbox to align items */
             justify-content: flex-start;
-            /* Align items to the left */
             align-items: center;
-            /* Vertically center items */
-            margin-left: -40px;
+            margin-left: -35px;
+            margin-top: -20px;
+            flex-wrap: nowrap;
         }
 
         .attendance-item {
             display: flex;
-            /* Ensure each item is a flex container */
             align-items: center;
-            /* Vertically align the radio button and label */
-            margin-right: px;
-            /* Space between the items */
+            margin-right: 20px;
+        }
+
+        .attendance-item input[type="radio"] {
+            margin-right: -20px;
         }
 
         .no-bold {
             font-weight: normal;
-            /* Ensure the label text is not bold */
             margin-left: 8px;
-            /* Adds space between the radio button and label */
+
         }
 
         .photo-gallery {
             display: flex;
-            /* Use Flexbox to align items in a row */
             justify-content: space-between;
-            /* Distribute space evenly between items */
-            margin: 0;
-            /* Remove any margin around the gallery */
+            margin: -1px 90px;
             padding: 0;
-            /* Remove padding around the gallery */
         }
 
         .photo-item {
-
-            margin: 12px;
-            /* Remove margin between items */
+            margin: 30px;
         }
 
         .photo-item img {
             width: 100%;
-            /* Make images responsive */
             height: auto;
-            /* Maintain aspect ratio */
-
         }
 
         .gift h2 {
@@ -679,125 +644,200 @@
             font-size: 30px;
             display: block;
             margin-left: 120px;
+            margin-bottom: 40px;
         }
 
         .gift .icon {
             width: 80px;
-            margin-bottom: -20px;
-            
+            margin-bottom: -1px;
+            margin-top: -30px;
         }
+
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.rsvp-section1 {
-    background-color: #1c1c1c;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Times New Roman', serif; 
-}
+        .rsvp-section1 {
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Times New Roman', serif;
+        }
 
-.quote {
-    margin-bottom: 30px;
-    color: #cfcfcf;
-    font-size: 18px;
-
+        .quote {
+            margin-bottom: 30px;
+            color: #cfcfcf;
+            font-size: 18px;
             padding: 10px 10px;
-}
+        }
 
-.container5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #1c1c1c;
-    padding-bottom: 20px;
-}
+        .container5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: auto auto; /* Automatically adjust row heights */
-    grid-gap: 10px; /* Space between images */
-    max-width: 900px;
-    margin: 0 auto; /* Center the grid on the page */
-}
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-gap: 10px;
+            margin: 0 auto;
+        }
 
-/* Size for each photo based on the uploaded image design */
+        .photo1 img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
 
-/* First photo: Tall (portrait style) */
-.photo1 img {
-    width: 100%;
-    height: 450px; /* Taller than wide */
-    object-fit: cover; /* Ensures image is properly contained */
-}
-
-/* Second photo: Square */
-.photo2 img {
-    width: 100%;
-    height: 450px; /* Same height as photo1 but squared */
-    object-fit: cover;
-}
-
-/* Third photo: Tall (portrait style) */
-.photo3 img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
-
-/* Fourth photo: Square */
-.photo4 img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
-
-/* Optional rounded corners for uniform look */
-.photo1 img, 
-.photo2 img, 
-.photo3 img, 
-.photo4 img {
-    border-radius: 8px;
-    filter: grayscale(100%); /* Matching grayscale effect */
-}
+        .photo2 img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
 
 
+        .photo3 img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
 
-.thank {
-    margin-top: 20px;
-}
 
-.thanks {
-    font-family: 'Times New Roman', serif;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
+        .photo4 img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
 
-h2 {
-    font-family: 'Times New Roman', serif;
-    font-size: 20px;
-    font-weight:lighter;
-}
 
+        .photo1 img,
+        .photo2 img,
+        .photo3 img,
+        .photo4 img {
+            border-radius: 8px;
+            filter: grayscale(100%);
+        }
+
+        .thank {
+            margin-top: 20px;
+        }
+
+        .thanks {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', serif;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .comment-section {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-top: 65px;
+            padding: 0px 20px;
+            border-radius: 10px;
+            text-align: center;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .icon1 {
+            width: 130px;
+            height: 130px;
+            margin-bottom: 2px;
+            margin-top: -85px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        textarea,
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button1 {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button1:hover {
+            background-color: #333;
+        }
+
+        .messages {
+            margin-top: 20px;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .message {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('lingkaran.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: 1;
+            animation: moveBackground 20s linear infinite;
+        }
+
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100% 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Section 1 -->
-    <div class="section section1">
-        <div>
-            <h2>We invite you to the wedding of</h2>
-            <h1>PUTRA <span class="names">And</span> PUTRI</h1>
-            <p class="date"><i>07. 08. 2024</i></p>
-            <button class="button">Open the Invitation <i class="fas fa-envelope"></i></button>
-        </div>
-    </div>
-
-    <!-- Section 2 -->
     <div class="section section2">
         <div>
             <h2>The Wedding of</h2>
@@ -805,7 +845,6 @@ h2 {
         </div>
     </div>
 
-    <!-- Bride & Groom Profiles -->
     <div class="container">
         <h1 class="title">BRIDE & GROOM</h1>
         <div class="profiles">
@@ -833,7 +872,6 @@ h2 {
     </div>
     <div class="container1">
         <div class="event-section">
-            <!-- Akad Event Card -->
             <div class="event-card akad-nikah">
                 <img src="ring.png" alt="Wedding Rings" class="icon">
                 <h2>AKAD <span class="akad-text">Nikah</span></h2>
@@ -852,7 +890,6 @@ h2 {
             </div>
         </div>
         <div class="event-section">
-            <!-- Resepsi Event Card -->
             <div class="event-card resepsi">
                 <img src="birds.png" alt="Bird Symbol" class="icon">
                 <h2>RESEPSI <span class="akad-text">Pernikahan</span></h2>
@@ -899,14 +936,12 @@ h2 {
             </button>
         </div>
     </div>
-    <!-- RSVP Section -->
     <section id="rsvp" class="rsvp-section">
         <p> "Dalam setiap hembusan angin dan riuh gemuruh ombak, aku selalu percaya bahwa semesta telah menuliskan
             takdir kita bersama,
         <p>erjalan beriringan menuju keabadian cinta yang tak pernah pudar."</p>
         <div class="rsvp-container">
 
-            <!-- Akad Event Card -->
             <div class="rsvp-container rsvp">
                 <img src="rsvp.png" alt="Wedding Rings" class="icon">
                 <h2 class="rsvp-title">RSVP <span class="rsvp-text">Kehadiran</span></h2>
@@ -919,8 +954,11 @@ h2 {
                     <label1 for="name">Nama Lengkap</label1>
                     <p>Galang Freya</p>
                     <hr class="divider1">
+                    <label1 for="name">Jumlah Kehadiran</label1>
+                    <p></p>
+                    <hr class="divider1">
                     <div class="attendance-options">
-                        <label>Kehadiran?</label><br>
+                        <label1 for="kehadiran">Kehadiran?</label1><br>
                         <div class="attendance-items">
                             <div class="attendance-item">
                                 <input type="radio" id="yes" name="attendance" value="yes" required>
@@ -932,9 +970,21 @@ h2 {
                             </div>
                         </div>
                     </div>
+
+                    <button type="submit" class="rsvp-submit">Kirim</button>
+                </form>
+                </form>
             </div>
-            <button type="submit" class="rsvp-submit">Kirim</button>
-            </form>
+    </section>
+    <section class="photo-gallery">
+        <div class="photo-item">
+            <img src="prewed1.png" alt="Description of image 1">
+        </div>
+        <div class="photo-item">
+            <img src="prewed2.png" alt="Description of image 2">
+        </div>
+        <div class="photo-item">
+            <img src="prewed3.png" alt="Description of image 3">
         </div>
     </section>
     <section class="photo-gallery">
@@ -970,48 +1020,47 @@ h2 {
         </div>
     </section>
     <img src="prewed4.png" class="screen-prewed">
-                <section id="rsvp" class="rsvp-section1">
-                    <p class="quote">"Seperti daun yang jatuh di musim gugur, setiap momen bersamamu adalah bagian dari keindahan hidup yang tak akan pernah kulupakan"</p>
-                    
-                    <div class="container5">
-                        <div class="grid">
-                            <div class="photo1">
-                                <img src="prewed5.png" alt="Couple Photo 1">
-                            </div>
-                            <div class="photo2">
-                                <img src="prewed6.png" alt="Couple Photo 2">
-                            </div>
-                            <div class="photo3">
-                                <img src="prewed7.png" alt="Couple Photo 3">
-                            </div>
-                            <div class="photo4">
-                                <img src="prewed8.png" alt="Couple Photo 4">
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="thank">
-                        <p class="thanks">Terima Kasih</p>
-                        <h2>PUTRA & PUTRI</h2>
-                    </div>
-                </section>
-                
-
-                
-    <!-- Message/Doa Section -->
-    <section id="message" class="message-section">
-        <div class="message-container">
-            <h2>Tinggalkan Pesan/Doa untuk Kami</h2>
-            <form action="#" method="post">
-                <label for="comments">Comments</label>
-                <textarea id="comments" name="comments" placeholder="Tulis pesan/doa..." required></textarea>
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Nama" required />
-
-                <button type="submit" class="message-submit">Kirim</button>
-            </form>
+    <div class="comment-section">
+        <img src="amplop.png" alt="Envelope Icon" class="icon1">
+        <div class="section-title">Tinggalkan pesan/doa untuk kami</div>
+        <form>
+            <textarea placeholder="Comments"></textarea>
+            <input type="text" placeholder="Name">
+            <button type="submit" class="button1">Kirim</button>
+        </form>
+        <div class="messages">
+            <div class="message">
+                <p><strong>Putra Tahta</strong><br>Semoga menjadi keluarga sakinah mawaddah warohmah, aamiin..</p>
+            </div>
+            <div class="message">
+                <p><strong>Syakira S.Kom</strong><br>Semoga menjadi keluarga sakinah mawaddah warohmah, aamiin..</p>
+            </div>
         </div>
-    </section> 
+    </div>
+    <section id="rsvp" class="rsvp-section1">
+        <p class="quote">"Seperti daun yang jatuh di musim gugur, setiap momen bersamamu adalah bagian dari keindahan
+            hidup yang tak akan pernah kulupakan"</p>
+        <div class="container5">
+            <div class="grid">
+                <div class="photo1">
+                    <img src="prewed5.png" alt="Couple Photo 1">
+                </div>
+                <div class="photo2">
+                    <img src="prewed6.png" alt="Couple Photo 2">
+                </div>
+                <div class="photo3">
+                    <img src="prewed7.png" alt="Couple Photo 3">
+                </div>
+                <div class="photo4">
+                    <img src="prewed8.png" alt="Couple Photo 4">
+                </div>
+            </div>
+        </div>
+        <div class="thank">
+            <p class="thanks">Terima Kasih</p>
+            <h2>PUTRA & PUTRI</h2>
+        </div>
+    </section>
 </body>
+
 </html>

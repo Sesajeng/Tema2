@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000;
+            position: relative;
+        }
+
+        .section1 {
+    background: url('bg1.png') no-repeat center center; /* Mengatur gambar tetap di tengah */
+    background-size: cover; /* Membuat gambar mengisi seluruh area dan tetap proporsional */
+    background-attachment: fixed; /* Membuat gambar tetap saat halaman di-scroll */
+    color: #000;
+}
+
+        .section .button {
+            background-color: #000;
+            color: #fff;
+            padding: 7px 20px;
+            border-radius: 25px;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            margin-top: -5px;
+        }
+
+        .section .button i {
+            margin-left: 8px;
+        }
+
+        .wedding-from {
+                font-size: 1.4em;
+            }
+            .wedding-from {
+            font-size: 1.3em;
+            color: black;
+            margin-top: -15px;
+            font-weight: 700; 
+
+        }
+        .wedding-ket {
+            color: black;
+            margin-top: -10px;
+            font-weight: 300;
+        }
+        .wedding-date {
+            color: black;
+            margin-bottom: 80px;
+            margin-top: -30px;
+            font-weight: 500; 
+        }
+        .wedding-title {
+            font-family: 'Great Vibes', cursive;
+            color: black;
+            margin-top: 10px;
+            font-size: 3.5em;
+            font-weight: 200;
+        }
+      
+            .wedding-judul {
+            color: black;
+            margin-top: -10px;
+            font-weight: bold;
+        }
+        .wedding-to {
+            color:black
+        }
+        /* Media queries untuk layar lebih kecil */
+@media (max-width: 768px) {
+    body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000;
+            position: relative;
+        }
+
+        .section1 {
+        background-size: 195%; /* Pada layar yang sangat kecil, gambar disesuaikan dengan lebar elemen */
+        background-position: top center;
+    }
+
+        .section .button {
+            background-color: #000;
+            color: #fff;
+            padding: 7px 20px;
+            border-radius: 25px;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            margin-top: -5px;
+        }
+
+        .section .button i {
+            margin-left: 8px;
+        }
+
+        .wedding-from {
+                font-size: 1.4em;
+            }
+            .wedding-from {
+            font-size: 1.3em;
+            color: black;
+            margin-top: -15px;
+            font-weight: 700; 
+
+        }
+        .wedding-ket {
+            color: black;
+            margin-top: -10px;
+            font-weight: 300;
+        }
+        .wedding-date {
+            color: black;
+            margin-bottom: 80px;
+            margin-top: -30px;
+            font-weight: 500; 
+        }
+        .wedding-title {
+            font-family: 'Great Vibes', cursive;
+            color: black;
+            margin-top: 10px;
+            font-size: 3.5em;
+            font-weight: 200;
+        }
+      
+            .wedding-judul {
+            color: black;
+            margin-top: -10px;
+            font-weight: bold;
+        }
+        .wedding-to {
+            color:black
+        }
+}
+
+/* Media queries untuk layar lebih kecil lagi (mobile) */
+@media (max-width: 480px) {
+    body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000;
+            position: relative;
+        }
+
+        .section1 {
+        background-size: 290%; /* Pada layar yang sangat kecil, gambar disesuaikan dengan lebar elemen */
+        background-position: top center;
+    }
+
+        .section .button {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 25px;
+            font-size: 8px;
+            display: inline-flex;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            margin-top: -5px;
+            margin-bottom: 20px;
+        }
+
+        .section .button i {
+            margin-left: 5px;
+        }
+
+        .wedding-from {
+                font-size: 1.4em;
+            }
+
+            .wedding-from {
+            font-size: 1em;
+            color: black;
+            margin-top: -15px;
+            font-weight: 700; 
+        }
+        .wedding-ket {
+            color: black;
+            margin-top: -10px;
+            font-weight: 300;
+            font-size: 13px;
+        }
+        .wedding-date {
+            color: black;
+            margin-bottom: 80px;
+            margin-top: -30px;
+            font-weight: 500; 
+            font-size: 13px;
+        }
+        .wedding-title {
+            font-family: 'Great Vibes', cursive;
+            color: black;
+            margin-top: 10px;
+            font-size: 2.5em;
+            font-weight: 200;
+        }
+      
+            .wedding-judul {
+            color: black;
+            margin-top: -10px;
+            font-weight: bold;
+        }
+        .wedding-to {
+            color:black;
+            font-size: 11px;
+        
+        }
+}
+    </style>
+</head>
+
+<body>
+    <div class="section section1">
+        <div class="content">
+            <p class="wedding-ket">We invite you to the wedding of</p>
+            <h1 class="wedding-title">Putra & Putri</h1>
+            <p class="wedding-date">Sabtu, 17 Agustus 2024</p>
+            <p class="wedding-to">Kepada Yth.</p>
+            <h2 class="wedding-from">Sinta Dewi</h2>
+            <button class="button" onclick="window.location.href='index.html';">Open the Invitation <i class="fas fa-envelope"></i></button>
+        </div>
+    </div>
+    
+    
+   
