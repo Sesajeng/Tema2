@@ -1448,12 +1448,12 @@
            text-align: center;
     padding: 30px;
     background: url('bg 10.png') no-repeat center center / cover;
-    height: 880px;
+    height: 600px;
 
         }
         .rsvp-container {
             max-width: 250px;
-            height: 600px;
+            height: 450px;
             margin: 0 auto;
             background-color: #e0e0e0;
             border-radius: 10px;
@@ -1498,11 +1498,11 @@
         .rsvp-submit {
             background-color: #333;
             color: #fff;
-            padding: 10px 5px;
+            padding: 5px 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-left: 700px;
+            margin-left: 100px;
             animation: pulse 4s infinite;
         }
         @keyframes pulse {
@@ -1519,6 +1519,7 @@
         .rsvp-submit:hover {
             background-color: #555;
         }
+
         .rsvp-container-rsvp h2 {
             font-size: 40px;
             font-family: 'Playfair Display', serif;
@@ -1579,12 +1580,8 @@
             margin-bottom: -3px;
 
         }
-
-
-            
-        
         .divider1 {
-            width: 100%;
+            width: 110%;
             border: 1px solid #1c1c1c;
             opacity: 0.5;
             margin-left: -15px;
@@ -1596,9 +1593,6 @@
             font-size: 20px;
         }
 
-       
-        
-       
         .rsvp-container p {
             text-align: left;
             font-size: 10px;
@@ -1645,6 +1639,96 @@
             
 
         }
+        .gift-section {
+            background: url('bg 12.png') no-repeat center center/cover;
+            background-size: 400%;
+            color: #fff;
+            padding: 50px ;
+            text-align: center;
+            margin-left: -50px;
+            margin-right: -30px;
+            margin-top: -170px;
+            margin-bottom: 20px;
+        }
+
+        .gift h2 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 5px;
+        }
+
+        .gift p{
+            font-size: 10px;
+            text-align: center; 
+            margin-bottom: -10px;
+            text-align:center;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: -1px;
+            margin-bottom: 10px;
+            
+        }
+        .gift .gift-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 25px;
+            display: block;
+            margin-left: 85px;
+        }
+      
+    .reminder-button:hover {
+        background-color: #555;
+        color: #fff;
+    }
+
+    .gift-buttons {
+        margin-top: 20px; /* Tambahan spasi di atas div tombol */
+    }
+
+    .gift-buttons .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 8px;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px; /* Spasi antar tombol */
+        border-radius: 5px; /* Menambahkan radius untuk sudut tombol */
+        background-color: #fff; /* Warna latar belakang tombol */
+        color: #333; /* Warna teks tombol */
+        transition: background-color 0.3s; /* Transisi untuk hover */
+        animation: pulse 4s infinite;
+        font-size: 7px; /* Tambahkan efek animasi */
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1); /* Ukuran normal */
+        }
+        50% {
+            transform: scale(1.1); /* Membesar di tengah animasi */
+        }
+        100% {
+            transform: scale(1); /* Kembali ke ukuran normal */
+        }
+    }
+
+    .gift-buttons .button:hover {
+        background-color: #555; /* Warna latar belakang saat hover */
+        color: #fff; /* Warna teks saat hover */
+    }
+
+    .gift-buttons img.kado-icon {
+        width: 8px; /* Ukuran ikon Kado */
+        height: 10px; /* Tinggi ikon Kado */
+        margin-right: 5px; /* Jarak antara ikon dan teks */
+    }
+
+    .gift-buttons img.bank-icon {
+        width: 8px; /* Ukuran ikon Bank */
+        height: 10px; /* Tinggi ikon Bank */
+        margin-right: 5px; /* Jarak antara ikon dan teks */
+    }
        
 
 }
@@ -1830,7 +1914,6 @@
                             </div>
                         </div>
                     </div>
-
                     <button type="submit" class="rsvp-submit">Kirim</button>
                 </form>
                 </form>
