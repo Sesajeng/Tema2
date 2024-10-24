@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation</title>
+    <title>Invitation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
@@ -1098,10 +1098,11 @@
 
         
 
-        .footer img {
+        .footer-logo {
             margin-top: 10px; /* Space between text and logo */
-            width: 100px; /* Adjust the logo size */
+            width: 80px; 
             height: auto;
+            margin-bottom: 20px;
         }
 
         .footer p {
@@ -1111,19 +1112,7 @@
         }
 
         /* For larger screens, we can add some padding and adjust fonts */
-        @media (min-width: 768px) {
-            .footer {
-                padding: 30px 0;
-            }
-
-            .footer .diikatJanji {
-                font-size: 28px; /* Larger font size for diikatJanji on bigger screens */
-            }
-
-            .footer img {
-                width: 120px; /* Larger logo size for bigger screens */
-            }
-        }
+       
         .music-button {
             padding: 10px 20px;
             background-color: #333;
@@ -1146,6 +1135,519 @@
         .music-button:hover {
             background-color: #555;
         }
+
+
+        @media (max-width: 768px) {
+            .section1 {
+            background: url('bg 2.png') no-repeat center center/cover;
+            background-size: 400%;
+            color: #000;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .section1 {
+            background: url('bg 2.png') no-repeat center center/cover;
+            background-size: 300%;
+            color: #000;
+        }
+        .wedding-ket {
+            color: black;
+            margin-top: -350px;
+            font-weight: 00;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        .section1 .wedding-title {
+            font-family: 'Great Vibes', cursive;
+            color: black;
+            margin-top: 5px;
+            font-size: 2.5em;
+            font-weight: 550;
+        }
+        .container {
+    text-align: center;
+    padding: 30px;
+    background: url('bg 10.png') no-repeat center center / cover;
+    height: 880px;
+    }
+    .title {
+            font-size: 20px;
+            font-family: 'Playfair Display', serif;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+        .profile-img {
+            width: 60%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .name {
+            font-family: 'Great Vibes', cursive;
+            margin: 5px 0;
+            font-size: 25px !important;
+        }
+
+        .profile h2 {
+            font-size: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .profile p {
+            font-size: 10px;
+            color: #777;
+        }
+        .container1 {
+            text-align: center;
+    padding: 10px;
+    background: url('bg 7.png') no-repeat center center / cover;
+    height: 880px;
+    margin-top: -30px;
+    margin-left: -50px;
+    margin-right: -50px;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 15px;
+            margin: 0 5px;
+        }
+        .profile1 h2 {
+            font-size: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .profile1 p {
+            font-size: 10px;
+            color: #777;
+        }
+        .event-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .event-card {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 230px;
+            text-align: center;
+        }
+
+        .event-card h2 {
+            font-size: 25px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 10px;
+        }
+
+        .event-card p {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+
+        .event-card strong {
+            font-size: 18px;
+        }
+
+        .event-card .button {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 1px;
+            border-radius: 5px;
+            font-size: 9px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            animation: pulse 4s infinite;
+        }
+        @keyframes pulse {
+    0% {
+        transform: scale(1); /* Ukuran normal */
+    }
+    50% {
+        transform: scale(1.1); /* Membesar di tengah animasi */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran normal */
+    }
+}
+        .event-card .button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .event-card .icon {
+            width: px;
+            margin-bottom: 20px;
+        }
+
+        .event-card .icons {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .akad-nikah .icon {
+            width: 70px;
+            margin-bottom: 5px;
+        }
+
+        .akad-nikah h2 {
+            font-size: 30px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .akad-nikah .akad-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 25px;
+            display: block;
+            margin-left: 50px;
+        }
+
+        .akad-nikah p {
+            font-size: 11px;
+            margin: 1px 0;
+        }
+
+        .akad-nikah p:nth-of-type(1) {
+            margin-top: 20px;
+        }
+
+        .akad-nikah p:nth-of-type(3) {
+            margin-top: 25px;
+        }
+
+        .akad-nikah p:nth-of-type(4) {
+            margin-top: 7px;
+
+        }
+
+        .resepsi .icon {
+            width: 110px;
+            margin-bottom: 5px;
+
+        }
+
+        .resepsi h2 {
+            font-size: 30px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .resepsi .akad-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 25px;
+            display: block;
+            margin-left: 50px;
+        }
+
+        .resepsi p {
+            font-size: 11px;
+            margin: 1px 0;
+        }
+
+        .resepsi p:nth-of-type(1) {
+            margin-top: 20px;
+        }
+
+        .resepsi p:nth-of-type(3) {
+            margin-top: 25px;
+        }
+
+        .resepsi p:nth-of-type(4) {
+            margin-top: 7px;
+        }
+        .container2 {
+            background: url('bg 9.png') no-repeat center center/cover;
+            background-size: 1800px;
+            color: #fff;
+            padding: 40px;
+            margin-top: -5px;
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+        .countdown-content h2 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            margin-top: -10px;
+        }
+
+        #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 0px;
+            font-size: 15px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: -20px;
+        }
+
+        .countdown-box {
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .countdown-box span {
+            display: block;
+        }
+
+        .countdown-box .label {
+            font-size: 5px;
+            text-transform: uppercase;
+        }
+
+        .reminder-button {
+            background-color: #fff;
+            color: #333;
+            padding: 4px 10px;
+            border-radius: 3px;
+            border: none;
+            margin-top: 40px;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 7px;
+            animation: pulse 4s infinite;
+        
+        }
+        @keyframes pulse {
+    0% {
+        transform: scale(1); /* Ukuran normal */
+    }
+    50% {
+        transform: scale(1.1); /* Membesar di tengah animasi */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran normal */
+    }
+}
+
+        .reminder-button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .reminder-button i {
+            margin-right: 10px;
+        }
+
+        .rsvp-section {
+            
+           text-align: center;
+    padding: 30px;
+    background: url('bg 10.png') no-repeat center center / cover;
+    height: 880px;
+
+        }
+        .rsvp-container {
+            max-width: 250px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-top: 65px;
+            padding: 0px 20px;
+        }
+        .rsvp-section p{
+            font-size: 8px;
+            margin-bottom: -10px;
+            text-align:center;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: -10px;
+            margin-bottom: -20px;
+        }
+        .rsvp-section h2 {
+            font-family: 'YourFont', serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .rsvp-container p {
+            font-family: 'YourFont', serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+            
+        }
+
+        .rsvp-container input,
+        .rsvp-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .attendance-options label {
+            font-size: 16px;
+        }
+
+        .rsvp-submit {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 700px;
+            animation: pulse 4s infinite;
+        }
+        @keyframes pulse {
+    0% {
+        transform: scale(1); /* Ukuran normal */
+    }
+    50% {
+        transform: scale(1.1); /* Membesar di tengah animasi */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran normal */
+    }
+}
+        .rsvp-submit:hover {
+            background-color: #555;
+        }
+        .rsvp-container-rsvp h2 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .rsvp-title {
+            font-size: 1px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .rsvp .icon {
+            width: 150px;
+            margin-bottom: -3px;
+            margin-top: -25px;
+        }
+
+        .rsvp h2 {
+            font-size: 30px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .rsvp .rsvp-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 25px;
+            display: block;
+            margin-left: 50px;
+        }
+
+        .rsvp p {
+            font-size: 10px;
+            margin: 1px 0;
+            margin-top: 40px;
+            margin-bottom: 1px;
+        }
+
+        .rsvp-container p {
+            text-align: left;
+            font-size: 14px;
+            margin-top: 15px;
+            margin-left: -45px;
+            margin-right: -50px;
+            margin-bottom: -20px;
+        }
+        .rsvp-container form label1 {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-left: -15px;
+            margin-bottom: -3px;
+
+        }
+
+
+            
+        
+        .divider1 {
+            width: 100%;
+            border: 1px solid #1c1c1c;
+            opacity: 0.5;
+            margin-left: -15px;
+            margin-top: 1px;
+            margin-bottom: -40px;
+        }
+
+        .rsvp-section .p {
+            font-size: 20px;
+        }
+
+       
+        
+       
+        .rsvp-container p {
+            text-align: left;
+            font-size: 10px;
+            margin-top: 15px;
+            margin-left: -45px;
+            margin-right: -50px;
+            margin-bottom: -5px;
+            margin-top: 5px;
+    }
+    .custom-select {
+        width: 30px; 
+        font-size: 10px; 
+        margin-left: -15px;
+        margin-bottom: -15px;
+    }
+    .attendance-options {
+            text-align: left;
+            margin-top: -10px;
+        }
+
+        .attendance-items {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: -35px;
+            margin-top: -20px;
+            flex-wrap: nowrap;
+        }
+
+        .attendance-item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .attendance-item input[type="radio"] {
+            margin-right: -20px;
+            transform: scale(0.8);
+        }
+
+        .no-bold {
+            margin-left: 10px;
+            font-size: 1px;
+            
+
+        }
+       
+
+}
 
     </style>
 </head>
@@ -1222,6 +1724,10 @@
                 startAnimations();
             }
         };
+
+
+
+
     </script>
     <div class="container1">
         <div class="event-section">
@@ -1234,9 +1740,9 @@
                 <p>Jl. Halim Perdana Kusuma, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, DKI Jakarta</p>
                 <div style="text-align: center;"> <!-- Membungkus tombol untuk memastikan tengah secara horizontal -->
                     <button class="button"
-                        style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border: none; cursor: pointer;">
+                        style="display: inline-flex; align-items: center; justify-content: center; padding: 5px 10px; border: none; cursor: pointer;">
                         <img src="location.png" alt="Location Icon"
-                            style="width: 16px; height: 16px; margin-right: 8px;">
+                            style="width: 10px; height: 10px; margin-right: 10px;">
                         Lihat Lokasi
                     </button>
                 </div>
@@ -1252,9 +1758,9 @@
                 <p>Jl. Halim Perdana Kusuma, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, DKI Jakarta</p>
                 <div style="text-align: center;"> <!-- Membungkus tombol untuk memastikan tengah secara horizontal -->
                     <button class="button"
-                        style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border: none; cursor: pointer;">
+                        style="display: inline-flex; align-items: center; justify-content: center; padding: 5px 10px; border: none; cursor: pointer;">
                         <img src="location.png" alt="Location Icon"
-                            style="width: 16px; height: 16px; margin-right: 8px;">
+                            style="width: 10px; height: 10px; margin-right: 10px;">
                         Lihat Lokasi
                     </button>
                 </div>
@@ -1291,8 +1797,7 @@
     </div>
     <section id="rsvp" class="rsvp-section">
         <p> "Dalam setiap hembusan angin dan riuh gemuruh ombak, aku selalu percaya bahwa semesta telah menuliskan
-            takdir kita bersama,
-        <p>Berjalan beriringan menuju keabadian cinta yang tak pernah pudar."</p>
+            takdir kita bersama, Berjalan beriringan menuju keabadian cinta yang tak pernah pudar."</p>
         <div class="rsvp-container">
 
             <div class="rsvp-container rsvp">
@@ -1473,7 +1978,7 @@
             <span class="small-text">Made With By</span> 
         </h4>
         <!-- diikatJanji Logo -->
-        <img src="diikatJanji-logo.png" alt="diikatJanji Logo">
+        <img src="logo.jpg" alt="diikatJanji Logo" class="footer-logo">
         <p> all right reserved by diikatJanji</p>
     </footer>
      
