@@ -10,62 +10,116 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Playfair Display', serif;
-            background-color: #f0f0f0;
-            color: #333;
-        }
 
-        .section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #000;
-            position: relative;
-        }
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f0f0f0;
+ 
+}
 
-        .wedding-ket {
-            color: black;
-            margin-top: -300px;
-            font-weight: 300;
-            font-size: 25px;
-            margin-bottom: 25px;
-        }
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    position: relative;
+}
 
-        .wedding-ar-rum {
-            position: absolute;
+.wedding-ket {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.wedding-title {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 3.5em;
+    font-weight: 550;
+}
+
+
+
+.wedding-date {
+    color: white;
+    font-size: 1.2em;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    z-index: 1; 
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.wedding-ar-rum {
+    position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Full width of the page */
+    width: 100%;
+   
     padding: 20px;
-    background-color: rgba(230, 230, 230, 0.6); /* Darker background for better contrast */
-    color: rgb(46, 46, 46); /* White text */
+    background-color: rgba(230, 230, 230, 0.6);
+    color: rgb(46, 46, 46);
     text-align: center;
-    font-size: 18px; /* Adjust text size as needed */
-    line-height: 1.5; 
-    margin-bottom: -1px;/* For better readability */
-        }
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: -20px;
+}
 
-        .wedding-arti-ar-rum {
-            font-size: 50px;
-        }
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
-        .section1 .wedding-title {
-            font-family: 'Great Vibes', cursive;
-            color: black;
-            margin-top: 10px;
-            font-size: 3.5em;
-            font-weight: 550;
-        }
+.mySlides {
+    display: none;
+    width: 100%;
+}
 
-        .section1 {
-            background: url('bg 2.png') no-repeat center center/cover;
-            background-size: 100%;
-            color: #000;
-        }
+.mySlides img {
+    width: 100vw;       /* Full width of the viewport */
+    height: 105vh;      /* Full height of the viewport */
+    object-fit: cover;  
+}
+
+
+
+.wedding-date {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+
+
 
         .section h2 {
             font-size: 30px;
@@ -76,7 +130,7 @@
 
         .section h1 {
             font-size: 70px;
-            font-family: "Julius Sans One", sans-serif;
+            font-family: 'Great Vibes', cursive;
             font-weight: 400;
             margin-bottom: 10px;
             line-height: 1.2;
@@ -125,8 +179,8 @@
             text-align: center;
             padding: 30px;
             background: url('bg1.png') no-repeat center center / cover;
-            height: 1350px;
-
+            height: 1400px;
+            margin-top: 15px;
 
         }
 
@@ -1580,34 +1634,6 @@
         }
 
         @media (max-width: 480px) {
-            .section1 {
-                background: url('bg 2.png') no-repeat center center/cover;
-                background-size: 300%;
-                color: #000;
-            }
-
-            .wedding-ket {
-                color: black;
-                margin-top: -350px;
-                font-weight: 00;
-                font-size: 15px;
-                margin-bottom: 25px;
-            }
-
-            .section1 .wedding-title {
-                font-family: 'Great Vibes', cursive;
-                color: black;
-                margin-top: 5px;
-                font-size: 2.5em;
-                font-weight: 550;
-            }
-
-            .container {
-                text-align: center;
-                padding: 30px;
-                background: url('bg 10.png') no-repeat center center / cover;
-                height: 880px;
-            }
 
             .title {
                 font-size: 20px;
@@ -1660,10 +1686,10 @@
             }
 
             .profile1 h2 {
-                font-size: 10px;
-                margin-bottom: 5px;
-                font-weight: bold;
-                color: #333;
+                font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
             }
 
             .profile1 p {
@@ -2541,18 +2567,114 @@
                 justify-content: left;
                 text-align: justify;
             }
-            .wedding-ar-rum {
-            position: absolute;
+           
+        body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f0f0f0;
+    
+ 
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.wedding-ket {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.wedding-title {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: px;
+    font-weight: 550;
+}
+.wedding-date {
+    color: white;
+    font-size: 1.2em;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    z-index: 1; 
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.wedding-ar-rum {
+    position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Full width of the page */
-    padding: 20px;
-    background-color: rgba(230, 230, 230, 0.6); /* Darker background for better contrast */
-    color: rgb(46, 46, 46); /* White text */
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(230, 230, 230, 0.6);
+    color: rgb(46, 46, 46);
     text-align: center;
-    font-size: 10px; /* Adjust text size as needed */
-    line-height: 1.5; 
-    margin-bottom: -1px;/* For better readability */
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: -20px;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.mySlides img {
+    width: 100vw;       /* Full width of the viewport */
+    height: 105vh;      /* Full height of the viewport */
+    object-fit: cover;  
+}
+
+.wedding-date {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.section h1 {
+            font-size: 50px;
+            font-family: 'Great Vibes', cursive;
+            font-weight: 400;
+            margin-bottom: 10px;
+            margin-top: 25px;
+            line-height: 1.2;
         }
 
         }
@@ -2563,21 +2685,58 @@
     <!-- Replace with your birds image -->
     <div class="section section1">
         <div class="content">
-            <p class="wedding-ket">The wedding of</p>
-            <h1 class="wedding-title">Putra & Putri</h1>
-            <p class="wedding-date">Sabtu, 17 Agustus 2024</p>
-            <p class="wedding-ar-rum"> "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan
-                pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia
-                menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar
-                terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir." 
-            Q.S Ar Rum: 21 </p>
+            <div class="text-overlay">
+                <p class="wedding-ket">The wedding of</p>
+                <h1 class="wedding-title">Putra & Putri</h1>
+                <p class="wedding-date">Sabtu, 17 Agustus 2024</p>
+            </div>
             
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="cover1.jpg" alt="Photo 1">
+                </div>
+                <div class="mySlides">
+                    <img src="cover2.jpg" alt="Photo 2">
+                </div>
+                <div class="mySlides">
+                    <img src="cover3.jpg" alt="Photo 3">
+                </div>
+            </div>
+    
+            <p class="wedding-ar-rum"> 
+                "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis)
+                dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang.
+                Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
+                berpikir." (QS Ar-Rum: 21)
+            </p>
         </div>
     </div>
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+    
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+    
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+    
     <div class="container">
         <h1 class="title">BRIDE & GROOM</h1>
         <div class="profiles">
-            <div class="profile1">
+            <div class="profile">
                 <img src="wanita.png" alt="Bride" class="profile-img bride-img">
                 <p class="name">Riska</p>
                 <h2>Angelina Mariska, S.Kom</h2>
@@ -2887,11 +3046,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
             <div class="thank">
                 <p class="thanks">Terima Kasih</p>
                 <h4>PUTRA & PUTRI</h4>
