@@ -9,117 +9,124 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f0f0f0;
 
-body {
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    background-color: #f0f0f0;
- 
-}
+        }
 
-.section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
-    position: relative;
-}
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
-.wedding-ket {
-    color: white;
-    font-weight: 300;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-.wedding-title {
-    font-family: 'Great Vibes', cursive;
-    color: white;
-    font-size: 3.5em;
-    font-weight: 550;
-}
+            position: relative;
+        }
 
+        .wedding-ket {
+            color: white;
+            font-weight: 300;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
 
-
-.wedding-date {
-    color: white;
-    font-size: 1.2em;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding-top: 30px;
-    text-align: center;
-    z-index: 1; 
-}
-
-
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    z-index: 0;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-.wedding-ar-rum {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-   
-    padding: 20px;
-    background-color: rgba(230, 230, 230, 0.6);
-    color: rgb(46, 46, 46);
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: -20px;
-}
-
-/* Slideshow styles */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.mySlides {
-    display: none;
-    width: 100%;
-}
-
-.mySlides img {
-    width: 100vw;       /* Full width of the viewport */
-    height: 105vh;      /* Full height of the viewport */
-    object-fit: cover;  
-}
+        .wedding-title {
+            font-family: 'Great Vibes', cursive;
+            color: white;
+            font-size: 3.5em;
+            font-weight: 550;
+        }
 
 
 
-.wedding-date {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #fff;
-}
+        .wedding-date {
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding-top: 30px;
+            text-align: center;
+            z-index: 1;
+        }
 
 
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
 
+        .mySlides {
+            display: none;
+        }
 
+        .mySlides img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .wedding-ar-rum {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            padding: 20px;
+            background-color: rgba(230, 230, 230, 0.6);
+            color: rgb(46, 46, 46);
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: -20px;
+        }
+
+        /* Slideshow styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+        }
+
+        .mySlides img {
+            width: 100vw;
+            /* Full width of the viewport */
+            height: 105vh;
+            /* Full height of the viewport */
+            object-fit: cover;
+        }
+
+        .h2 {
+                font-size: 90px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 100;
+                margin-bottom: 10px;
+                margin-left: -50px;
+                margin-top: 35px;
+            }
+
+        .wedding-date {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #fff;
+        }
 
         .section h2 {
             font-size: 30px;
@@ -147,7 +154,12 @@ body {
             margin-top: 20px;
         }
 
-
+        .gallery-text {
+                font-family: 'Great Vibes', cursive;
+                font-size: 40px;
+                display: block;
+                margin-left: 90px;
+            }
         .section .button i {
             margin-left: 8px;
         }
@@ -181,7 +193,6 @@ body {
             background: url('bg1.png') no-repeat center center / cover;
             height: 1400px;
             margin-top: 15px;
-
         }
 
         .container5 {
@@ -225,14 +236,14 @@ body {
         }
 
         .bride-img {
-            animation: slideInLeft 4s ease forwards;
-            animation-iteration-count: infinite;
+            animation: slideInLeft 3s ease forwards;
+
         }
 
 
         .groom-img {
-            animation: slideInRight 4s ease forwards;
-            animation-iteration-count: infinite;
+            animation: slideInRight 3s ease forwards;
+
         }
 
 
@@ -620,7 +631,6 @@ body {
             font-size: 17px;
         }
 
-
         .gift-section {
             background: url('bg 3.png') no-repeat center center/cover;
             background-size: 100%;
@@ -631,6 +641,7 @@ body {
             margin-right: -30px;
         }
 
+    
         .gift-container h2 {
             font-family: 'YourFont', serif;
             font-size: 36px;
@@ -642,8 +653,6 @@ body {
             font-size: 23px;
             margin-bottom: 20px;
         }
-
-
 
         .reminder-button:hover {
             background-color: #555;
@@ -776,6 +785,51 @@ body {
             margin-top: -70px;
         }
 
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating{
+    from {
+        transform: 0;
+    } to{
+        transform: rotate(360deg);
+    }
+}
         .rsvp h2 {
             font-size: 40px;
             font-family: 'Playfair Display', serif;
@@ -994,7 +1048,7 @@ body {
         .comment-section {
             max-width: 900px;
             margin: 30px auto;
-            background-color: #e0e0e0;
+            background-color: #efefef;
             border-radius: 10px;
             margin-top: 65px;
             padding: 0px 20px;
@@ -1002,6 +1056,7 @@ body {
             text-align: center;
             justify-content: center;
             font-family: 'Times New Roman', Times, serif;
+            
         }
 
         .icon1 {
@@ -1215,13 +1270,10 @@ body {
 
         .footer p {
             color: #666;
-            /* Lighter color for secondary text */
             font-size: 12px;
             margin-bottom: -10px;
         }
 
-        /* For larger screens, we can add some padding and adjust fonts */
-        /* Section "Terima Kasih" dan "PUTRA & PUTRI" */
         .thank {
             text-align: center;
             padding: 20px 0;
@@ -1252,7 +1304,8 @@ body {
         /* Footer */
         .footer {
             background-color: #000;
-            /* Warna background hitam */
+
+            
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -1517,19 +1570,7 @@ body {
             line-height: 1.6;
         }
 
-        .comment-section {
-            max-width: 900px;
-            margin: 30px auto;
-            background-color: #e0e0e0;
-            border-radius: 10px;
-            margin-top: 65px;
-            padding: 0px 20px;
-            border-radius: 10px;
-            text-align: center;
-            justify-content: center;
-            font-family: 'Times New Roman', Times, serif;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
+        
 
         .icon5 {
             width: 130px;
@@ -1603,7 +1644,7 @@ body {
         }
 
         .message {
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             padding: 15px 20px;
             border-radius: 10px;
             margin-bottom: 15px;
@@ -1639,7 +1680,16 @@ body {
                 font-size: 20px;
                 font-family: 'Playfair Display', serif;
                 color: #000000;
-                margin-bottom: 30px;
+                margin-bottom: 45px;
+                margin-top: 30px;
+            }
+
+            .title-and {
+                font-size: 25px;
+                font-family: 'Playfair Display', serif;
+                color: #000000;
+                margin-bottom: 40px;
+                margin-top: -40px;
             }
 
             .profile-img {
@@ -1659,6 +1709,7 @@ body {
                 margin-bottom: 5px;
                 font-weight: bold;
                 color: #333;
+                margin-right: -50px;
             }
 
             .profile p {
@@ -1670,7 +1721,7 @@ body {
                 text-align: center;
                 padding: 10px;
                 background: url('bg 7.png') no-repeat center center / cover;
-                height: 880px;
+                height: 970px;
                 margin-top: -30px;
                 margin-left: -50px;
                 margin-right: -50px;
@@ -1678,18 +1729,22 @@ body {
 
             .social-icons {
                 margin-top: 10px;
+
             }
 
             .social-icons img {
                 width: 15px;
                 margin: 0 5px;
+                margin-bottom: 50px;
+
             }
 
-            .profile1 h2 {
+            .profile1 .h2 {
                 font-size: 20px;
-            margin-bottom: 10px;
-            font-weight: bold;
-            color: #333;
+                margin-bottom: 10px;
+                font-weight: bold;
+                margin-right: 50px;
+               
             }
 
             .profile1 p {
@@ -1701,8 +1756,8 @@ body {
                 display: flex;
                 justify-content: center;
                 gap: 30px;
-                margin-top: 30px;
-                margin-bottom: 20px;
+                margin-top: 60px;
+                margin-bottom: 10px;
             }
 
             .event-card {
@@ -1710,14 +1765,17 @@ body {
                 color: #fff;
                 padding: 20px;
                 border-radius: 10px;
-                width: 230px;
+                width: 240px;
                 text-align: center;
+                margin-bottom: -30px;
+
             }
 
             .event-card h2 {
                 font-size: 25px;
                 font-family: 'Playfair Display', serif;
                 margin-bottom: 10px;
+                margin-top: 5px;
             }
 
             .event-card p {
@@ -1739,6 +1797,7 @@ body {
                 border: none;
                 margin-top: 20px;
                 animation: pulse 4s infinite;
+                margin-bottom: 20px;
             }
 
             @keyframes pulse {
@@ -1783,13 +1842,15 @@ body {
                 font-family: 'Playfair Display', serif;
                 font-weight: 100;
                 margin-bottom: 10px;
+                margin-left: -50px;
+                margin-top: -5px;
             }
 
             .akad-nikah .akad-text {
                 font-family: 'Great Vibes', cursive;
                 font-size: 25px;
                 display: block;
-                margin-left: 50px;
+                margin-left: 100px;
             }
 
             .akad-nikah p {
@@ -1821,13 +1882,14 @@ body {
                 font-family: 'Playfair Display', serif;
                 font-weight: 100;
                 margin-bottom: 10px;
+                margin-left: -50px;
             }
 
             .resepsi .akad-text {
                 font-family: 'Great Vibes', cursive;
                 font-size: 25px;
                 display: block;
-                margin-left: 50px;
+                margin-left: 100px;
             }
 
             .resepsi p {
@@ -1862,6 +1924,7 @@ body {
                 font-weight: 400;
                 margin-bottom: 15px;
                 margin-top: -10px;
+                margin-left: -5px;
             }
 
             #countdown {
@@ -1871,6 +1934,8 @@ body {
                 font-size: 15px;
                 font-family: 'Playfair Display', serif;
                 margin-bottom: -20px;
+                margin-left: 20px;
+
             }
 
             .countdown-box {
@@ -1893,7 +1958,7 @@ body {
                 padding: 4px 10px;
                 border-radius: 3px;
                 border: none;
-                margin-top: 40px;
+                margin-top: 50px;
                 display: inline-flex;
                 align-items: center;
                 cursor: pointer;
@@ -1929,23 +1994,23 @@ body {
             }
 
             .rsvp-section {
-
                 text-align: center;
                 padding: 30px;
                 background: url('bg 10.png') no-repeat center center / cover;
-                height: 530px;
+                height: 670px;
                 margin-bottom: 15px;
 
             }
 
             .rsvp-container {
-                max-width: 250px;
-                height: 410px;
-                margin: 0 auto;
+                max-width: 300px;
+                height: 550px;
                 background-color: #e0e0e0;
                 border-radius: 10px;
-                margin-top: 65px;
+                margin-top: 30px;
                 padding: 0px 20px;
+                margin-left: 10px;
+
             }
 
             .rsvp-section p {
@@ -1991,9 +2056,12 @@ body {
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
-                margin-left: 100px;
+                margin-left: 180px;
                 animation: pulse 4s infinite;
                 font-size: 9px;
+                margin-right: -10px;
+                margin-left: 200.px;
+                
             }
 
             @keyframes pulse {
@@ -2029,12 +2097,14 @@ body {
                 font-family: 'Playfair Display', serif;
                 font-weight: 100;
                 margin-bottom: 10px;
+                margin-left: -45px;
+                margin-top: 10px;
             }
 
             .rsvp .icon {
                 width: 150px;
                 margin-bottom: -3px;
-                margin-top: -25px;
+                margin-top: 20px;
             }
 
             .rsvp h2 {
@@ -2048,7 +2118,7 @@ body {
                 font-family: 'Great Vibes', cursive;
                 font-size: 25px;
                 display: block;
-                margin-left: 50px;
+                margin-left: 90px;
             }
 
             .rsvp p {
@@ -2085,7 +2155,7 @@ body {
                 opacity: 0.5;
                 margin-left: -15px;
                 margin-top: 1px;
-                margin-bottom: -40px;
+                margin-bottom: -30px;
             }
 
             .rsvp-section .p {
@@ -2100,6 +2170,7 @@ body {
                 margin-right: -50px;
                 margin-bottom: -5px;
                 margin-top: 5px;
+                line-height: 2.5em;
             }
 
             .custom-select {
@@ -2112,22 +2183,33 @@ body {
             .attendance-options {
                 text-align: left;
                 margin-top: -10px;
+                margin-bottom: -40px;
             }
 
             .attendance-items {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                margin-left: -35px;
+                margin-left: -17px;
                 margin-top: -20px;
                 flex-wrap: nowrap;
+                margin-top: -10px;
             }
 
             .attendance-item {
                 display: flex;
                 align-items: center;
-                margin-right: 20px;
+                margin-right: 30px;
+                /* Adjust to control space between items */
             }
+
+            .attendance-item label {
+                margin-left: 25px;
+                /* Space between radio button and label text */
+                white-space: nowrap;
+                /* Prevents the label text from wrapping */
+            }
+
 
             .attendance-item input[type="radio"] {
                 margin-right: -20px;
@@ -2156,6 +2238,7 @@ body {
                 font-family: 'Playfair Display', serif;
                 font-weight: 100;
                 margin-bottom: 5px;
+                margin-top: 5px;
             }
 
             .gift p {
@@ -2182,19 +2265,15 @@ body {
                 color: #fff;
             }
 
-            .gift-buttons {
-                margin-top: 20px;
-                /* Tambahan spasi di atas div tombol */
-            }
-
-            .gift-buttons .button {
-                display: inline-flex;
+           .button-kado{
+            margin-left: 10px;
+            display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 padding: 5px 8px;
                 border: none;
                 cursor: pointer;
-                margin-right: 20px;
+                margin-right: -10px;
                 /* Spasi antar tombol */
                 border-radius: 5px;
                 /* Menambahkan radius untuk sudut tombol */
@@ -2206,6 +2285,48 @@ body {
                 /* Transisi untuk hover */
                 animation: pulse 4s infinite;
                 font-size: 7px;
+           }
+.button-bank{
+    margin-left: 20px;
+            display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 8px;
+                border: none;
+                cursor: pointer;
+                margin-right: -10px;
+                /* Spasi antar tombol */
+                border-radius: 5px;
+                /* Menambahkan radius untuk sudut tombol */
+                background-color: #fff;
+                /* Warna latar belakang tombol */
+                color: #333;
+                /* Warna teks tombol */
+                transition: background-color 0.3s;
+                /* Transisi untuk hover */
+                animation: pulse 4s infinite;
+                font-size: 7px;
+}
+            .gift-buttons .button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 8px;
+                border: none;
+                cursor: pointer;
+                margin-right: -10px;
+                /* Spasi antar tombol */
+                border-radius: 5px;
+                /* Menambahkan radius untuk sudut tombol */
+                background-color: #fff;
+                /* Warna latar belakang tombol */
+                color: #333;
+                /* Warna teks tombol */
+                transition: background-color 0.3s;
+                /* Transisi untuk hover */
+                animation: pulse 4s infinite;
+                font-size: 7px;
+                
                 /* Tambahkan efek animasi */
             }
 
@@ -2233,6 +2354,7 @@ body {
                 /* Warna teks saat hover */
             }
 
+
             .gift-buttons img.kado-icon {
                 width: 8px;
                 /* Ukuran ikon Kado */
@@ -2241,38 +2363,39 @@ body {
                 margin-right: 5px;
                 /* Jarak antara ikon dan teks */
             }
-
+.gift .icon{
+    margin-top: -10px;
+}
             .gift-buttons img.bank-icon {
                 width: 8px;
                 /* Ukuran ikon Bank */
                 height: 10px;
                 /* Tinggi ikon Bank */
-                margin-right: 5px;
+                margin-right: px;
                 /* Jarak antara ikon dan teks */
             }
 
             .photo-gallery {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                /* Create 3 equal-width columns */
-                gap: 5px;
-                /* Space between the photos */
                 justify-items: center;
-                /* Centers the photos within each grid cell */
-                margin: 5px 10px;
+                margin: 1px 1px;
+                margin-left: -30px;
+                margin-right: -25px;
+                margin-top: 30px;
             }
 
             .photo-item {
-                margin: 10px;
+                margin: 2px;
                 justify-items: center;
             }
 
             .photo-item img {
                 width: 100%;
-                /* Make images fill the grid cells */
-                height: 70px;
-                /* Keep the aspect ratio */
-                max-width: 500px;
+
+                height: 110px;
+
+                max-width: 600px;
                 /* Set a max width to ensure all photos are of similar size */
             }
 
@@ -2290,7 +2413,7 @@ body {
                 text-align: center;
                 padding: 30px;
                 background: url('bg1.png') no-repeat center center / cover;
-                height: 1330px;
+                height: 1290px;
                 margin-top: 10px;
 
             }
@@ -2320,16 +2443,17 @@ body {
                 color: #000;
                 /* Sesuaikan warna teks */
                 margin-top: 0;
+                
             }
 
             /* Footer */
             .footer {
                 background-color: #000;
-                /* Warna background hitam */
+                width: 400px;
                 color: #fff;
                 text-align: center;
-                padding: 20px 0;
-                margin-bottom: -150px;
+                margin-left: -5px;
+            
             }
 
             .footer .small-text {
@@ -2345,12 +2469,17 @@ body {
                 /* Ukuran logo lebih kecil */
                 height: auto;
             }
+            .footer p {
+            font-size: 15px !important;
+            margin-top: 10px;
+            color: #cccccc;
+        }
 
             .screen-prewed {
                 margin-left: -30px;
                 margin-right: -20px;
                 width: 100vw;
-                height: 100vh;
+                height: 37vh;
                 object-fit: cover;
 
             }
@@ -2541,7 +2670,6 @@ body {
                 font-size: 15px;
                 font-weight: bold;
                 color: #333;
-                /* Warna teks yang lebih gelap */
                 margin-bottom: 1rem;
                 margin-left: -20px;
                 margin-top: -10px;
@@ -2550,7 +2678,6 @@ body {
             .timeline li .timeline-panel span {
                 font-size: 14px;
                 color: #333;
-                /* Warna teks yang lebih gelap */
                 margin-bottom: 1rem;
                 margin-left: -10px;
                 margin-top: -10px;
@@ -2567,122 +2694,167 @@ body {
                 justify-content: left;
                 text-align: justify;
             }
+
+            body {
+                margin: 0;
+                font-family: 'Playfair Display', serif;
+                background-color: #f0f0f0;
+
+
+            }
+
+            .section {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: relative;
+            }
+
+            .wedding-ket {
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .wedding-title {
+                font-family: 'Great Vibes', cursive;
+                color: white;
+                font-size: px;
+                font-weight: 550;
+            }
+
+            .wedding-date {
+                color: white;
+                font-size: 1.2em;
+            }
+
+            .text-overlay {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                padding-top: 30px;
+                text-align: center;
+                z-index: 1;
+            }
+
+
+            .slideshow-container {
+                position: relative;
+                max-width: 100%;
+                overflow: hidden;
+                z-index: 0;
+            }
+
+            .mySlides {
+                display: none;
+            }
+
+            .mySlides img {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+
+            .wedding-ar-rum {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 30px;
+                background-color: rgba(230, 230, 230, 0.6);
+                color: rgb(46, 46, 46);
+                text-align: center;
+                font-size: 10px;
+                line-height: 1.5;
+                margin-bottom: -20px;
+            }
+
+            .slideshow-container {
+                position: relative;
+                max-width: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            .mySlides {
+                display: none;
+                width: 100%;
+            }
+
+            .mySlides img {
+                width: 100vw;
+                height: 105vh;
+                object-fit: cover;
+            }
+
+            .wedding-date {
+                font-size: 1.2em;
+                margin-top: 10px;
+                color: #fff;
+            }
+
+            .section h1 {
+                font-size: 50px;
+                font-family: 'Great Vibes', cursive;
+                font-weight: 400;
+                margin-bottom: 10px;
+                margin-top: 25px;
+                line-height: 1.2;
+            }
+
+            .divider {
+                width: 30%;
+                margin: 10px auto;
+                border: 1px solid #fff;
+                opacity: 0.5;
+            }
+
+            .gallery-title {
+                font-size: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 100;
+                margin-bottom: 10px;
+                margin-left: -45px;
+            }
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 100;
+                margin-bottom: 10px;
+                margin-left: -50px;
+                margin-top: 35px;
+            }
+
+            .gallery-text {
+                font-family: 'Great Vibes', cursive;
+                font-size: 25px;
+                display: block;
+                margin-left: 90px;
+            }
+            .text{
+                font-size: 10px !important;
+            }
            
-        body {
-    margin: 0;
+.small-title {
+    font-size: 40px !important; 
+    font-weight: bold;
+    margin-right: -35px;
+}
+
+.app-container .form{
     font-family: 'Playfair Display', serif;
-    background-color: #f0f0f0;
-    
- 
 }
 
-.section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-.wedding-ket {
-    color: white;
-    font-weight: 300;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.wedding-title {
-    font-family: 'Great Vibes', cursive;
-    color: white;
-    font-size: px;
-    font-weight: 550;
-}
-.wedding-date {
-    color: white;
-    font-size: 1.2em;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding-top: 30px;
-    text-align: center;
-    z-index: 1; 
-}
-
-
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    z-index: 0;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-.wedding-ar-rum {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px;
-    background-color: rgba(230, 230, 230, 0.6);
-    color: rgb(46, 46, 46);
-    text-align: center;
-    font-size: 10px;
-    line-height: 1.5;
-    margin-bottom: -20px;
-}
-
-/* Slideshow styles */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.mySlides {
-    display: none;
-    width: 100%;
-}
-
-.mySlides img {
-    width: 100vw;       /* Full width of the viewport */
-    height: 105vh;      /* Full height of the viewport */
-    object-fit: cover;  
-}
-
-.wedding-date {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #fff;
-}
-
-.section h1 {
-            font-size: 50px;
-            font-family: 'Great Vibes', cursive;
-            font-weight: 400;
-            margin-bottom: 10px;
-            margin-top: 25px;
-            line-height: 1.2;
-        }
 
         }
     </style>
 </head>
 
 <body>
-    <!-- Replace with your birds image -->
     <div class="section section1">
         <div class="content">
             <div class="text-overlay">
@@ -2690,7 +2862,7 @@ body {
                 <h1 class="wedding-title">Putra & Putri</h1>
                 <p class="wedding-date">Sabtu, 17 Agustus 2024</p>
             </div>
-            
+
             <div class="slideshow-container">
                 <div class="mySlides">
                     <img src="cover1.jpg" alt="Photo 1">
@@ -2702,37 +2874,39 @@ body {
                     <img src="cover3.jpg" alt="Photo 3">
                 </div>
             </div>
-    
-            <p class="wedding-ar-rum"> 
-                "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis)
-                dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang.
+
+            <p class="wedding-ar-rum">
+                "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari
+                (jenis)
+                dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih
+                sayang.
                 Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
                 berpikir." (QS Ar-Rum: 21)
             </p>
         </div>
     </div>
-    
+
     <script>
         let slideIndex = 0;
         showSlides();
-    
+
         function showSlides() {
             let slides = document.getElementsByClassName("mySlides");
-            
+
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-    
+
             slideIndex++;
             if (slideIndex > slides.length) {
                 slideIndex = 1;
             }
-    
+
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000);
+            setTimeout(showSlides, 3500);
         }
     </script>
-    
+
     <div class="container">
         <h1 class="title">BRIDE & GROOM</h1>
         <div class="profiles">
@@ -2745,6 +2919,7 @@ body {
                     <a href="#"><img src="ig.png" alt="Instagram"></a>
                     <a href="#"><img src="fb.png" alt="Facebook"></a>
                 </div>
+                <h1 class="title-and">&</h1>
                 <div class="profile">
                     <img src="laki-laki.png" alt="Groom" class="profile-img groom-img">
                     <p class="name">Fakih</p>
@@ -2758,47 +2933,20 @@ body {
             </div>
         </div>
         <script>
-            let hasVisited = false; // Track if the user has visited the page before
-
-            // Function to stop animations by modifying CSS classes
-            const stopAnimations = () => {
-                const bride = document.getElementById('bride');
-                const groom = document.getElementById('groom');
-
-                bride.style.animationPlayState = 'paused'; // Pause bride animation
-                groom.style.animationPlayState = 'paused'; // Pause groom animation
-            };
-
-            // Function to start/restart animations
-            const startAnimations = () => {
-                const bride = document.getElementById('bride');
-                const groom = document.getElementById('groom');
-
-                bride.style.animationPlayState = 'running'; // Resume bride animation
-                groom.style.animationPlayState = 'running'; // Resume groom animation
-            };
-
-            // Event listener for visibility change
-            document.addEventListener('visibilitychange', () => {
-                if (!hasVisited && !document.hidden) {
-                    // Start animations only the first time or when revisiting
-                    startAnimations();
-                    hasVisited = true; // Set to true after the first animation
-                } else if (document.hidden) {
-                    stopAnimations(); // Stop animations when page is hidden
-                }
-            });
-
-            // Start animations when the page loads for the first time
             window.onload = () => {
-                if (!hasVisited) {
-                    startAnimations();
-                }
+                const bride = document.getElementById('bride');
+                const groom = document.getElementById('groom');
+
+                // Start animations when the page loads
+                bride.style.animationPlayState = 'running';
+                groom.style.animationPlayState = 'running';
+
+                // Stop animations after they play once
+                setTimeout(() => {
+                    bride.style.animationPlayState = 'paused';
+                    groom.style.animationPlayState = 'paused';
+                }, 3000); // Adjust timing to the length of your animation in milliseconds
             };
-
-
-
-
         </script>
         <div class="container1">
             <div class="event-section">
@@ -2811,7 +2959,7 @@ body {
                     <p>Jl. Halim Perdana Kusuma, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, DKI Jakarta
                     </p>
                     <div style="text-align: center;">
-                        <!-- Membungkus tombol untuk memastikan tengah secara horizontal -->
+
                         <button class="button"
                             style="display: inline-flex; align-items: center; justify-content: center; padding: 5px 10px; border: none; cursor: pointer;">
                             <img src="location.png" alt="Location Icon"
@@ -2823,7 +2971,7 @@ body {
             </div>
             <div class="event-section">
                 <div class="event-card resepsi">
-                    <img src="birds.png" alt="Bird Symbol" class="icon">
+                    <img src="burung1.png" alt="Bird Symbol" class="icon">
                     <h2>RESEPSI <span class="akad-text">Pernikahan</span></h2>
                     <p>Minggu, 17 Oktober 2024</p>
                     <p><strong>08.00 - 11.00</strong></p> <!-- Ubah waktu acara -->
@@ -2842,7 +2990,7 @@ body {
                 </div>
             </div>
         </div>
-        <img src="prewed.png" class="screen-prewed">
+        <img src="prewed0.jpg" class="screen-prewed">
         <div class="container2">
             <div class="countdown-content">
                 <h2>Hari yang ditunggu</h2>
@@ -2871,14 +3019,10 @@ body {
             </div>
         </div>
         <section id="rsvp" class="rsvp-section">
-            <p> "Dalam setiap hembusan angin dan riuh gemuruh ombak, aku selalu percaya bahwa semesta telah menuliskan
-                takdir kita bersama, Berjalan beriringan menuju keabadian cinta yang tak pernah pudar."</p>
             <div class="rsvp-container">
-
                 <div class="rsvp-container rsvp">
                     <img src="rsvp.png" alt="Wedding Rings" class="icon">
                     <h2 class="rsvp-title">RSVP <span class="rsvp-text">Kehadiran</span></h2>
-
                     <p>
                         Kami tidak sabar menunggu hari pernikahan kami bersama Bapak/Ibu/Saudara/i. Mohon konfirmasi
                         kehadiran. Terima kasih.
@@ -2887,11 +3031,9 @@ body {
                         <label1 for="name">Nama Lengkap</label1>
                         <p>Galang Freya</p>
                         <hr class="divider1">
-                        <label1 for="name">Jumlah Kehadiran</label1>
-                        <select id="attendance" name="attendance" class="custom-select">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
+                        <label1 for="name">No Handphone</label1>
+                        <p></p>
+                        <hr class="divider1">
                         <div class="attendance-options">
                             <label1 for="kehadiran">Kehadiran?</label1><br>
                             <div class="attendance-items">
@@ -2905,11 +3047,38 @@ body {
                                 </div>
                             </div>
                         </div>
+                        <label1 for="name">Jumlah Kehadiran</label1>
+                        <select id="attendance" name="attendance" class="custom-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
                         <button type="submit" class="rsvp-submit">Kirim</button>
                     </form>
                     </form>
                 </div>
         </section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const attendanceYes = document.getElementById('yes');
+        const attendanceNo = document.getElementById('no');
+        const attendanceSelect = document.getElementById('attendance');
+
+        function toggleAttendanceField() {
+            if (attendanceNo.checked) {
+                attendanceSelect.value = 0;
+                attendanceSelect.style.display = 'none';
+            } else {
+                attendanceSelect.style.display = 'block';
+            }
+        }
+
+        toggleAttendanceField();
+
+        attendanceYes.addEventListener('change', toggleAttendanceField);
+        attendanceNo.addEventListener('change', toggleAttendanceField);
+    });
+</script>
+        <h2>MOMEN<span class="gallery-text">Galeri</span></h2>
         <section class="photo-gallery">
             <div class="photo-item">
                 <img src="prewed1.png" alt="Description of image 1">
@@ -2941,28 +3110,26 @@ body {
                     berikut.
                 </p>
                 <div class="gift-buttons">
-                    <button class="button kado">
+                    <button class="button-kado">
                         <img src="kado.png" alt="Kado Icon" class="kado-icon">
                         Kirim Hadiah
                     </button>
-                    <button class="button bank">
+                    <button class="button-bank">
                         <img src="bank.png" alt="Bank Icon" class="bank-icon">
                         Transfer Bank
                     </button>
                 </div>
             </div>
         </section>
-
         <section id="story" class="story">
             <div class="container5">
                 <div class="row justify-content-center">
                     <div class="text-center">
-                        <h2>Cerita Kami</h2>
-                        <p>Kami memulai kisah ini dari pertemuan pertama hingga kemudian berpacaran dan akhirnya
+                        <h2 class="small-title">Cerita Kami</h2>
+                        <p class="text">Kami memulai kisah ini dari pertemuan pertama hingga kemudian berpacaran dan akhirnya
                             memutuskan untuk menikah</p>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col">
                         <ul class="timeline">
@@ -3011,18 +3178,14 @@ body {
                     </div>
                 </div>
             </div>
-
-
-
             <img src="prewed4.png" class="screen-prewed">
-
             <div class="comment-section">
                 <div class="app-container">
                     <img src="amplop.png" alt="Envelope Icon" class="icon5">
                     <div class="section-title">Tinggalkan pesan/doa untuk kami</div>
                     <form>
-                        <textarea placeholder="Comments"></textarea>
-                        <input type="text" placeholder="Name">
+                        <input type="text" value="Ihsan" readonly>
+                        <textarea placeholder="Ketikkan komentar terindahmu.."></textarea>
                         <button type="submit" class="button5">Kirim</button>
                     </form>
                     <div class="messages">
@@ -3056,38 +3219,6 @@ body {
                 <img src="logo.jpg" alt="diikatJanji Logo" class="logo">
                 <p>all right reserved by diikatJanji</p>
             </footer>
-            <!-- Audio Element -->
-            <audio id="background-music" loop autoplay>
-                <source src="MUSIC JANJI SUCI.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
             
-            <!-- Button to Toggle Music -->
-            <button class="music-button" id="toggle-music"><i class="fas fa-pause"></i></button>
-            
-            <script>
-                const audio = document.getElementById('background-music');
-                const toggleButton = document.getElementById('toggle-music');
-                let isPlaying = true; // Start with music playing
-            
-                // Play music automatically when the page loads (handled by autoplay attribute)
-                // No need for window.onload
-            
-                toggleButton.addEventListener('click', function () {
-                    if (isPlaying) {
-                        audio.pause();
-                        toggleButton.innerHTML = '<i class="fas fa-play"></i>'; // Icon for play
-                    } else {
-                        audio.play().catch(error => {
-                            console.error('Error playing audio:', error);
-                        });
-                        toggleButton.innerHTML = '<i class="fas fa-pause"></i>'; // Icon for pause
-                    }
-                    isPlaying = !isPlaying;
-                });
-            </script>
-            
-
 </body>
-
 </html>
