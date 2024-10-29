@@ -16,11 +16,12 @@
             margin: 0;
             font-family: 'Playfair Display', serif;
             background-color: #f0f0f0;
-
+    
         }
 
         .section {
-            height: 100vh;
+            height: 120vh;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,6 +29,7 @@
             overflow: hidden;
             position: relative;
         }
+        
 
         .wedding-ket {
             color: white;
@@ -36,11 +38,18 @@
             margin-bottom: 10px;
         }
 
+.card1 img{
+    display: block;           /* Mengubah gambar menjadi elemen blok */
+    margin: 1.5em auto 1.5em;    /* Margin atas 5em, margin bawah 5px, dan margin kiri/kanan otomatis */
+    width: 6em; 
+}
+
         .wedding-title {
             font-family: 'Great Vibes', cursive;
             color: white;
             font-size: 3.5em;
             font-weight: 550;
+            font-weight: bold;
         }
 
 
@@ -48,6 +57,7 @@
         .wedding-date {
             color: white;
             font-size: 1.2em;
+          
         }
 
         .text-overlay {
@@ -59,7 +69,6 @@
             z-index: 1;
         }
 
-
         .slideshow-container {
             position: relative;
             max-width: 1%;
@@ -67,22 +76,22 @@
             z-index: 0;
         }
 
-    
+        .card1 p {
+            margin: 0; /* Menghilangkan margin default pada paragraf */
+    font-size: 1em; /* Ukuran font */
+    line-height: 2em;
+  color: rgb(65, 65, 65);
+  text-align: center;          /* Memusatkan teks */
+  padding: 0 5em; 
 
-        .wedding-ar-rum {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-
-            padding: 20px;
-            background-color: rgba(230, 230, 230, 0.6);
-            color: rgb(46, 46, 46);
-            text-align: center;
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: -20px;
         }
+        .title-and {
+                font-size: 35px;
+                font-family: 'Playfair Display', serif;
+                color: #000000;
+                margin-bottom: 55px;
+                margin-top: 50px;
+            }
 
         /* Slideshow styles */
         .slideshow-container {
@@ -93,17 +102,53 @@
         }
 
         .mySlides {
-            display: none;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
+    position: relative; /* Pastikan elemen memiliki posisi relatif */
+}
 
-        .mySlides img {
-            width: 100%;
-    height: 10%;
+.mySlides img {
+    width:100%;
+    height: 150em; 
     object-fit: cover;
-        }
+    object-position: center 90%;
+    margin-top: 10em; /* Atur margin sesuai kebutuhan */
+}
+
+/* Tambahkan gradien di atas gambar */
+.mySlides::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(to bottom, rgba(128, 128, 128, 1) 20%, rgba(128, 128, 128, 0) 45%), 
+        linear-gradient(to top, rgba(128, 128, 128, 1) 34%, rgba(128, 128, 128, 0) 50%);
+    z-index: 1; /* Pastikan gradien di atas gambar */
+    pointer-events: none; /* Agar klik tidak terhalang gradien */
+}  
+
+.card1 {
+    background-color:  rgba(128, 128, 128, 1); /* Warna latar belakang putih */
+    border: 1px solid #ccc;    /* Border abu-abu */
+    border-radius: 10px;       /* Sudut melengkung */
+    padding: 10;             
+    justify-content: center;
+    background-color: rgb(255, 255, 255); /* Bayangan lembut */
+    width: 70em;
+    height: 18em;
+    justify-content: center;       /* Memusatkan secara horizontal */
+    align-items: center; 
+    display:block;
+}
+
+.card2{
+    background-color:  rgba(128, 128, 128, 1);
+    height: 25em;
+    justify-content: center;       /* Memusatkan secara horizontal */
+    align-items: center; 
+    display: flex;      
+}
 
         .h2 {
                 font-size: 90px;
@@ -133,6 +178,8 @@
             font-weight: 400;
             margin-bottom: 10px;
             line-height: 1.2;
+            font-weight: bold;
+            word-spacing: 15px;
         }
 
         .section .names {
@@ -183,8 +230,8 @@
             text-align: center;
             padding: 30px;
             background: url('bg1.png') no-repeat center center / cover;
-            height: 1400px;
-            margin-top: 15px;
+            height: 2000em;
+            margin-top: 0px;
         }
 
         .container5 {
@@ -199,6 +246,7 @@
             font-family: 'Playfair Display', serif;
             color: #000000;
             margin-bottom: 60px;
+            margin-top: 1em;
         }
 
         .title1 {
@@ -206,6 +254,7 @@
             font-family: 'Playfair Display', serif;
             color: #bdbdbd;
             margin-bottom: 10px;
+            
         }
 
         .profiles {
@@ -222,7 +271,7 @@
         }
 
         .profile-img {
-            width: 100%;
+            width: 19%;
             border-radius: 8px;
             margin-bottom: 15px;
         }
@@ -283,6 +332,7 @@
 
         .social-icons {
             margin-top: 20px;
+            
         }
 
         .social-icons img {
@@ -2711,13 +2761,6 @@
                 margin-bottom: 10px;
             }
 
-            .wedding-title {
-                font-family: 'Great Vibes', cursive;
-                color: white;
-                font-size: px;
-                font-weight: 550;
-            }
-
             .wedding-date {
                 color: white;
                 font-size: 1.2em;
@@ -2840,8 +2883,6 @@
 .app-container .form{
     font-family: 'Playfair Display', serif;
 }
-
-
         }
     </style>
 </head>
@@ -2851,13 +2892,15 @@
         <div class="content">
             <div class="text-overlay">
                 <p class="wedding-ket">The wedding of</p>
-                <h1 class="wedding-title">Putra & Putri</h1>
-                <p class="wedding-date">Sabtu, 17 Agustus 2024</p>
+                <h1 class="wedding-title">Shinta & Irfan</h1>
+                <p class="wedding-date">Akad - 27 Desember 2024 <br>
+                    Resepsi - 28 Desember 2024
+                    </p>
             </div>
 
             <div class="slideshow-container">
                 <div class="mySlides">
-                    <img src="177A8394.jpg" alt="Photo 1">
+                    <img src="177A8276.jpg" alt="Photo 1">
                 </div>
                 <!-- <div class="mySlides">
                     <img src="cover2.jpg" alt="Photo 2">
@@ -2866,19 +2909,24 @@
                     <img src="cover3.jpg" alt="Photo 3">
                 </div> -->
             </div>
-
-            <p class="wedding-ar-rum">
-                "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari
-                (jenis)
-                dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih
-                sayang.
-                Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
-                berpikir." (QS Ar-Rum: 21)
-            </p>
+        </div>
         </div>
     </div>
+    <div class="card2">
+    <div class="card1">
+        <img src="48061241.png" alt="Photo 1"> 
+        <p class="wedding-ar-rum">
+            "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari
+            (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih
+            sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
+            berpikir." 
+            <br><b>(QS Ar-Rum: 21)</b>
+        </p>
+    </div>
+    </div>
 
-    <script>
+    
+    <!-- <script>
         let slideIndex = 0;
         showSlides();
 
@@ -2897,29 +2945,29 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 3500);
         }
-    </script>
+    </script> -->
 
     <div class="container">
         <h1 class="title">BRIDE & GROOM</h1>
         <div class="profiles">
             <div class="profile">
-                <img src="wanita.png" alt="Bride" class="profile-img bride-img">
-                <p class="name">Riska</p>
-                <h2>Angelina Mariska, S.Kom</h2>
-                <p>Putri Kedua dari<br>Bapak Ahmad Syahputra<br>& Ibu Riyatna Kusumaningrum</p>
+                <img src="177A8539.JPG" alt="Bride" class="profile-img bride-img">
+                <p class="name">Shinta</p>
+                <h2>Shinta Amalia Kusuma Wardhani</h2>
+                <p>Anak pertama dari 2 bersaudara dari<br>Bapak Ngimron Sholeh<br>& Ibu Sri Puji Astutik</p>
                 <div class="social-icons">
-                    <a href="#"><img src="ig.png" alt="Instagram"></a>
-                    <a href="#"><img src="fb.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/shintaamaliaw/?utm_source=ig_web_button_share_sheet"><img src="ig.png" alt="Instagram"></a>
+                    <!-- <a href="#"><img src="fb.png" alt="Facebook"></a> -->
                 </div>
                 <h1 class="title-and">&</h1>
                 <div class="profile">
-                    <img src="laki-laki.png" alt="Groom" class="profile-img groom-img">
-                    <p class="name">Fakih</p>
-                    <h2>Fakih Prasetya Nugraha, S.T</h2>
-                    <p>Putra Kedua dari<br>Bapak Ahmad Syahputra<br>& Ibu Riyatna Kusumaningrum</p>
+                    <img src="177A8676.JPG" alt="Groom" class="profile-img groom-img">
+                    <p class="name">Irfan</p>
+                    <h2>Muhammad Irfan Hilman</h2>
+                    <p>Anak pertama dari 5 bersaudara<br>Bapak Heri Sumekar<br>& Ibu Erlina Rokhmah</p>
                     <div class="social-icons">
-                        <a href="#"><img src="ig.png" alt="Instagram"></a>
-                        <a href="#"><img src="fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/irfan224h/?utm_source=ig_web_button_share_sheet"><img src="ig.png" alt="Instagram"></a>
+                        <!-- <a href="#"><img src="fb.png" alt="Facebook"></a> -->
                     </div>
                 </div>
             </div>
@@ -2945,10 +2993,10 @@
                 <div class="event-card akad-nikah">
                     <img src="ring.png" alt="Wedding Rings" class="icon">
                     <h2>AKAD <span class="akad-text">Nikah</span></h2>
-                    <p>Minggu, 17 Oktober 2024</p>
-                    <p><strong>07.00 - 08.00</strong></p>
-                    <p>Puri Ardhya Garini, Halim Perdana Kusuma</p>
-                    <p>Jl. Halim Perdana Kusuma, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, DKI Jakarta
+                    <p>27 Desember 2024</p>
+                    <p><strong>08.00 - 10.00 WIB</strong></p>
+                    <p>Tempat : Masjid Baitussalam </p>
+                    <p>Dusun Kedungringin, RT/RW 003/002, Desa Temurejo, Kec. Bangorejo, Kab. Banyuwangi
                     </p>
                     <div style="text-align: center;">
 
@@ -2965,19 +3013,22 @@
                 <div class="event-card resepsi">
                     <img src="burung1.png" alt="Bird Symbol" class="icon">
                     <h2>RESEPSI <span class="akad-text">Pernikahan</span></h2>
-                    <p>Minggu, 17 Oktober 2024</p>
-                    <p><strong>08.00 - 11.00</strong></p> <!-- Ubah waktu acara -->
-                    <p>Puri Ardhya Garini, Halim Perdana Kusuma</p>
-                    <p>Jl. Halim Perdana Kusuma, Halim Perdana Kusumah, Kec. Makasar, Kota Jakarta Timur, DKI Jakarta
+                    <p>28 Desember 2024</p>
+                    <p><strong>10.00 - 16.00 WIB
+                    </strong></p> <!-- Ubah waktu acara -->
+                    <p>Tempat : Kediaman Wanita</p>
+                    <p>Dusun Kedungringin, RT/RW 003/002, Desa Temurejo, Kec. Bangorejo, Kab. Banyuwangi
                     </p>
                     <div style="text-align: center;">
                         <!-- Membungkus tombol untuk memastikan tengah secara horizontal -->
-                        <button class="button"
-                            style="display: inline-flex; align-items: center; justify-content: center; padding: 5px 10px; border: none; cursor: pointer;">
-                            <img src="location.png" alt="Location Icon"
-                                style="width: 10px; height: 10px; margin-right: 10px;">
-                            Lihat Lokasi
-                        </button>
+                        <a href="https://maps.app.goo.gl/hbamQTbQYxax36jcA" target="_blank" style="text-decoration: none;">
+                            <button class="button"
+                                    style="display: inline-flex; align-items: center; justify-content: center; padding: 5px 10px; border: none; cursor: pointer;">
+                                <img src="location.png" alt="Location Icon"
+                                    style="width: 10px; height: 10px; margin-right: 10px;">
+                                Lihat Lokasi
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -2989,27 +3040,69 @@
                 <hr class="divider">
                 <div id="countdown">
                     <div class="countdown-box">
-                        <span id="days">2</span>
+                        <span id="days">0</span>
                         <span class="label">Days</span>
                     </div>
                     <div class="countdown-box">
-                        <span id="hours">06</span>
+                        <span id="hours">00</span>
                         <span class="label">Hours</span>
                     </div>
                     <div class="countdown-box">
-                        <span id="minutes">30</span>
+                        <span id="minutes">00</span>
                         <span class="label">Mins</span>
                     </div>
                     <div class="countdown-box">
-                        <span id="seconds">10</span>
+                        <span id="seconds">00</span>
                         <span class="label">Secs</span>
                     </div>
                 </div>
-                <button class="reminder-button">
+                <button class="reminder-button" onclick="setGoogleReminder()">
                     <i class="fas fa-bell"></i> Buat Pengingat
                 </button>
             </div>
         </div>
+        <script>
+            // Atur tanggal acara yang dituju
+            const targetDate = new Date("December 27, 2024 00:00:00").getTime();
+        
+            // Fungsi hitung mundur
+            const countdownFunction = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+        
+                // Hitung waktu dalam hari, jam, menit, dan detik
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                // Tampilkan hasil pada elemen HTML
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+                document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+        
+                // Jika countdown selesai
+                if (distance < 0) {
+                    clearInterval(countdownFunction);
+                    document.getElementById("countdown").innerHTML = "<h3>Waktu telah tiba!</h3>";
+                }
+            }, 1000);
+        </script>
+        <script>
+            function setGoogleReminder() {
+                const title = encodeURIComponent("Acara Pernikahan");
+                const details = encodeURIComponent("Pernikahan Shinta & Irfan");
+                const location = encodeURIComponent("Lokasi Pernikahan");
+                const startDate = "20241227T000000Z";  // Tanggal mulai event (UTC)
+                const endDate = "20241227T235900Z";    // Tanggal selesai event (UTC)
+                
+                const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${location}&dates=${startDate}/${endDate}`;
+        
+                // Buka link Google Calendar di tab baru
+                window.open(url, "_blank");
+            }
+        </script>
         <section id="rsvp" class="rsvp-section">
             <div class="rsvp-container">
                 <div class="rsvp-container rsvp">
