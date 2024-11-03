@@ -741,6 +741,7 @@ body {
     overflow: hidden;
     object-position: 0% 50%;
   }
+  
   .rsvp-section {
     padding: 40px 15px;
     text-align: center;
@@ -749,9 +750,9 @@ body {
     height: 950px;
     transition: all 0.3s ease;
   }
+
   .rsvp-section.expanded {
-    padding-bottom: 50px; /* Adds space at the bottom */
-    /* Or use min-height to expand vertically */
+    padding-bottom: 50px; 
     min-height: 1500px;
 }
   
