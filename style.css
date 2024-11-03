@@ -747,7 +747,13 @@ body {
     margin-bottom: -1px;
     background: url('bg4.png') no-repeat center center / cover;
     height: 950px;
+    transition: all 0.3s ease;
   }
+  .rsvp-section.expanded {
+    padding-bottom: 50px; /* Adds space at the bottom */
+    /* Or use min-height to expand vertically */
+    min-height: 1500px;
+}
   
   .rsvp-container {
     max-width: 900px;
@@ -791,6 +797,17 @@ body {
   }
   
   .rspv-btn {
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 4s infinite;
+    margin-right: 3em;
+  }
+  .edit-btn {
     background-color: #333;
     color: #fff;
     font-size: 12px;

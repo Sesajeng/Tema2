@@ -253,8 +253,16 @@
                     </select>
                     <div class="rsvp-submit">
                         <button type="submit" class="rspv-btn">Kirim</button>
+                        <button type="button" class="edit-btn" onclick="expandRSVP()">Edit</button>
                     </div>
                 </form>
+                <script>
+                    function expandRSVP() {
+                        const rsvpSection = document.querySelector('.rsvp-section');
+                        rsvpSection.classList.toggle('expanded');
+                    }
+                </script>
+
                 <!-- Modal Pop-Up -->
                 <div id="confirmationModal" class="modal">
                     <div class="modal-content">
