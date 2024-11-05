@@ -10,8 +10,13 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css
+" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <div class="section section1">
         <div class="content">
@@ -255,12 +260,12 @@
                     </div>
                 </form>
                 <script>
-                   function expandRSVP() {
-    const rsvpSection = document.querySelector('.rsvp-section');
-    const rsvpContainer = document.querySelector('.rsvp-container');
-    rsvpSection.classList.toggle('expanded');
-    rsvpContainer.classList.toggle('expanded');
-}
+                    function expandRSVP() {
+                        const rsvpSection = document.querySelector('.rsvp-section');
+                        const rsvpContainer = document.querySelector('.rsvp-container');
+                        rsvpSection.classList.toggle('expanded');
+                        rsvpContainer.classList.toggle('expanded');
+                    }
 
                 </script>
 
@@ -303,7 +308,22 @@
             <img src="177A8517_1.jpg" alt="Description of image 3">
         </div>
     </section>
-
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="177A8263_1.jpg" alt="Description of image 1"></div>
+      <div class="swiper-slide"><img src="177A8104_1.jpg" alt="Description of image 2"></div>
+      <div class="swiper-slide"><img src="177A8502_1.jpg" alt="Description of image 3"></div>
+      <div class="swiper-slide"><img src="177A8483_1.jpg" alt="Description of image 1"></div>
+      <div class="swiper-slide"><img src="177A8194_1.jpg" alt="Description of image 2"></div>
+      <div class="swiper-slide"> <img src="177A8517_1.jpg" alt="Description of image 3"></div>
+      <!-- <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div> -->
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
     <section id="gift" class="gift-section">
         <div class="gift-container gift">
             <img src="gift.png" alt="gift" class="icon">
@@ -375,7 +395,7 @@
                         </li>
 
                         <li class="timeline-inverted">
-                            <div class="timeline-image" style="background-image: url('177A8402_1.JPG');"></div>
+                            <div class="timeline-image" style="background-image: url('177A8402_1.jpg');"></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h3>Tunangan</h3>
@@ -457,7 +477,17 @@
         <img src="logo.jpg" alt="diikatJanji Logo" class="logo">
         <p>all right reserved by diikatJanji</p>
     </footer>
-
+    <script src="
+    https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js
+    "></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const brideImg = document.querySelector('.bride-img');
